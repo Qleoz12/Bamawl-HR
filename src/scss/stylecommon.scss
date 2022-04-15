@@ -1,0 +1,5919 @@
+/*Mail-Send-For-Bonus-Pay-Slip lq_don*/
+.datepicker-disable button{
+  pointer-events: none;
+}
+.modal-header-custom{
+  .modal-header button{
+    margin-right:-33px !important;
+    width:2.2rem;
+    height: 2.2rem;
+    margin-top:-33px !important;
+    padding-bottom:0px !important;
+  }
+}
+.no-border-header .table thead tr:last-child th:first-child{
+  border-top-left-radius:0px;
+}
+.no-border-header .table thead tr:last-child th:last-child{
+  border-top-right-radius:0px;
+}
+.bonus-pay-slip-mail-sent{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  .card-table{
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #c8ccd0;
+    border-radius: 5px;
+  }
+  .closeAdd {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    color: white;
+    right: -10px;
+    top: -10px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: rgb(35, 58, 161) !important;
+    border: none;
+    width: 30px !important;
+    height: 30px i !important;
+  }
+  .upload-file::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .upload-file::before {
+    content: 'Select some files';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .upload-file:hover::before {
+    border-color: black;
+  }
+  .bonusPayslipMailSent{
+    .mainBonus{
+         background-color: #ebedef59;
+         border-radius: 10px;
+         margin: 5px;
+         border: 1px solid rgb(230, 230, 230);
+         padding: 20px;
+    }
+    .lableYesNo{
+      border-bottom: 2px solid #4851ac;
+      color: #4851ac;
+      padding-bottom: 2px;
+    }
+    .img-title{
+      width: 6px;
+      height: 12px;
+
+    }
+    .icon-add{
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+    }
+    #dropPaymentMonth,#dropPosition,#dropDepartMentName,#txtEmployeeID,#txtEmployeeCode,#txtEmployeeName{
+      text-align: left !important;
+    }
+    .td-email{
+      background-color: #d8f4dc;
+    }
+    .addEmp{
+      align-items: center;
+      margin: 0;
+    }
+    .add-employee{
+      margin: 15px;
+    }
+    .payment{
+      border: 1px solid #ebedef;
+      margin: 15px 15px 15px 0px;
+      padding: 15px;
+      background-color: #ffffff;
+    }
+    .form-btn-green {
+      background-image: linear-gradient(to bottom, #D6F8B3, #FFFFFF);
+      color: #000000;
+      border-color: #E7E5E5;
+      border-radius: 6px;
+      min-width: 6rem;
+      height: 2.5rem;
+    }
+    .form-btn-green:hover {
+        color: #000000;
+        background-image: linear-gradient(to bottom, #a7f857, #FFFFFF);
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        transition: all .2s ease-out;
+    }
+    .form-btn-green:focus {
+        color: #000000;
+        background-image: linear-gradient(to bottom, #a7f857, #FFFFFF);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important;
+    }
+    .c-switch-info .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(90deg, rgb(98, 128, 226) 0%, rgb(129, 136, 240) 35%, rgba(209, 205, 249, 1) 100%);
+      border-color: white;
+    }
+    .c-switch-info .c-switch-input:checked + .c-switch-slider::before {
+      border-color: white;
+    }
+
+    .c-switch-success .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(
+        90deg,
+        #D6F8B3 0%,
+        #D6F8B3 35%,
+        rgba(205, 249, 214, 1) 100%
+      );
+      border-color: white;
+    }
+
+    .c-switch-success .c-switch-input:checked + .c-switch-slider::before {
+      border-color: white;
+    }
+    .c-switch-label .c-switch-input:checked ~ .c-switch-slider::after {
+      left: 1px;
+      color: #000015;
+      content: attr(data-checked);
+    }
+    .switch-alive-die {
+      .c-switch-input:checked + .c-switch-slider {
+        background: linear-gradient(to right,#bbe78e 0%, #FFFFFF 100%);
+      }
+      .c-switch-slider {
+        background: linear-gradient(to right, #003399 0%, #6e63d4 100%);
+        margin-top: 5%;
+      }
+    }
+  }
+  .dropDepartMent{
+    width: 80% !important;
+    border: none !important;
+  }
+  .position{
+    border: none !important;
+  }
+  #dropDepartMent,#dropPosition{
+    padding-left: 0px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid;
+  }
+  .modal-body #errorMessage{
+    margin-top: 0px !important;
+  }
+}
+@media (max-width: 991px) {
+
+  .media-center {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .perfect-attendant-setup.media-center {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .bonus-pay-slip-mail-sent{
+    .dropDepartMent{
+      width: 100% !important;
+    }
+    .position-g{
+      margin-left: 0px !important;
+      width: 100% !important;
+    }
+  }
+}
+.category-border-tfoot{
+  .table tbody tr:last-child td:first-child{
+    border-bottom-left-radius:0px;
+  }
+  .table tfoot tr:first-child td:first-child{
+    border-bottom-left-radius:14px;
+  }
+  .table tfoot tr:first-child td:last-child{
+    border-bottom-right-radius:14px;
+  }
+}
+.estimated-border-tfoot{
+  .table tbody tr:last-child td:first-child{
+    border-bottom-left-radius:0px;
+  }
+  .table tfoot tr:last-child td:first-child{
+    border-bottom-left-radius:14px;
+  }
+  .table tfoot tr:last-child td:last-child{
+    border-bottom-right-radius:14px;
+  }
+}
+.estimated-border{
+  .table tbody tr:last-child td:first-child{
+    border-bottom-left-radius:0px;
+  }
+  .table tbody tr:last-child td:last-child{
+    border-bottom-right-radius:0px;
+  }
+  .table tbody tr:nth-last-child(2) td:first-child{
+    border-bottom-left-radius:14px;
+  }
+  .table tbody tr:nth-last-child(2) td:last-child{
+    border-bottom-right-radius:14px;
+  }
+}
+/**
+Business Trip Request*/
+.business-trip-request{
+  .border-right{
+    border-right: 1px solid #e3e5f1 !important;
+    margin: 0 10px 0 5px;
+  }
+  .gray-background{
+    background-color: #fafbfc !important;
+  }
+  .gray-background:focus{
+    background-color: #fafbfc !important;
+  }
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+    .file{
+        color: #01a3f8;
+        font-size: 16px;
+    }
+  .customer-td-img{
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .table{
+    width: 100%;
+    height: 100%;
+  }
+  .td-img{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .name-file{
+    margin-bottom: 0px !important;
+  }
+
+  .radio-estimated-customer{
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #a9a8a8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .radio-estimated-customer-need{
+    width: 250px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #a9a8a8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .td-blue{
+    background-color: #d6f7df !important;
+  }
+  .td-green{
+    background-color: #d6f8b3 !important;
+  }
+  .td-blue-customer{
+    background-color: #D5F7DF;
+  }
+  .td-blue-customer{
+    background-color: #D5F7DF;
+  }
+  .td-gray{
+    background-color: #fafbfc;
+  }
+  .td-pink-blur{
+    background-color: #f7ecf5;
+  }
+  .td-green-blur{
+    background-color: #F6F9F2;
+  }
+  #dropAppliedDate,#dropDueDate{
+    text-align: left !important;
+  }
+  .fa-file-alt{
+    font-size: 20px;
+  }
+  .fa-times{
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  .footer td{
+    border: 1px solid;
+    border-color: white;
+  }
+  .table-panel-businesstrip{
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #c8ccd0;
+    border-radius: 5px;
+    background-color: rgb(250, 251, 252);
+    input{
+      background-color:rgb(250, 251, 252);
+    }
+  }
+  .table-panel-businesstrip-white{
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #c8ccd0;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .currency{
+    width: 50% !important;
+  }
+  .fx-rate{
+    padding: 20px;
+    border: 1px solid #c8ccd0;
+    border-radius: 15px;
+    background-color: #F7BF24;
+    text-align: center;
+  }
+  .expense-request-attachment-file-browser {
+    border-bottom: dotted 1.5px !important;
+    color: blue !important;
+    cursor: pointer !important;
+}
+  .expense-request-label {
+    font-weight: normal !important;
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;}
+  .label-disable{
+    color: #c7c6c6;
+  }
+  .fa-file-alt{
+    color: rgb(1, 163, 248);
+  }
+  .text-area-business-trip{
+      background-attachment: local;
+      background-image: linear-gradient(to right, #fafbfc 0px, transparent 0px), linear-gradient(to left, #fafbfc 10px, transparent 10px), repeating-linear-gradient(#fafbfc, #fafbfc 31px, #b0b6d8 31px, #b0b6d8 32px, #fafbfc 31px);
+      line-height: 31px;
+      padding: 8px 10px;
+      resize: none;
+      border: none;
+      padding-left: 0px;
+      padding-top: 0px;
+      color: #9e9e9e;
+      background-position: 0px -2px;
+  }
+}
+@media (max-width: 455px) {
+    .business-trip-request{
+      .itemLeft{
+          flex-direction: column;
+          margin-left: 45px;
+      }
+    }
+  }
+@media (max-width: 1209px) {
+  .applied-date-picker,.due-date-picker{
+    width: 100% !important;
+  }
+}
+/*employee-leave-setting lq_don*/
+.employee-leave-setting{
+  .form-btn-green {
+    background-image: linear-gradient(to bottom, #D6F8B3, #FFFFFF);
+    color: #000000;
+    border-color: #E7E5E5;
+    border-radius: 6px;
+    min-width: 6rem;
+    height: 2.5rem;
+  }
+  .form-btn-green:hover {
+      color: #000000;
+      background-image: linear-gradient(to bottom, #a7f857, #FFFFFF);
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      transition: all .2s ease-out;
+  }
+  .form-btn-green:focus {
+      color: #000000;
+      background-image: linear-gradient(to bottom, #a7f857, #FFFFFF);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important;
+  }
+  input, #dropLeaveType{
+    text-align: left !important;
+  }
+
+  .form-btn-green {
+    background-image: linear-gradient(to bottom, #D6F8B3, #FFFFFF);
+    color: #000000;
+    border-color: #E7E5E5;
+    border-radius: 6px;
+    // padding: 8px 25px 8px 25px;
+    min-width: 6rem;
+    height: 2.5rem;
+    animation: moveFromBottom .5s ease-out;
+    animation-fill-mode: backwards;
+}
+.form-btn-green:hover {
+    color: #000000;
+    background-image: linear-gradient(to bottom, #a7f857, #FFFFFF);
+}
+.form-btn-green:focus {
+    color: #000000;
+    background-image: linear-gradient(to bottom, #a7f857, #FFFFFF);
+}
+}
+/*employee-leave-setting lq_don*/
+  @media (max-width: 992px) {
+    .employee-leave-setting{
+      .column{
+        width: 100% !important;
+      }
+      .column-right{
+        margin-left: 0px !important;
+      }
+    }
+  }
+  @media (max-width: 494px) {
+    .employee-leave-setting{
+      .next-previous-page{
+        justify-content: center !important;
+      }
+    }
+  }
+  /* Employee Shift Assign List lq_don*/
+.employee-shift-assign-list{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  .row-search{
+    width: 110%;
+    margin-left: -5%;
+    .col-lg-4{
+      padding: 0 4.6%;
+    }
+  }
+input,#dropDepartMentName,#dropShiftName{
+  text-align: left !important;
+}
+}
+  /* Employee Shift Assign List lq_don*/
+  @media (max-width: 992px) {
+    .employee-shift-assign-list{
+      .column{
+        width: 100% !important;
+      }
+      .column-right{
+        margin-left: 0px !important;
+      }
+    }
+  }
+/* Basic Salary List x_phu start*/
+.flex {
+  display: flex;
+}
+.textAlignCenter {
+  text-align: center !important;
+}
+.textAlignLeft {
+  text-align: left !important;
+}
+.textAlignRight {
+  text-align: right !important;
+}
+.basicSalaryList.marginBottom {
+  margin-bottom: 10px;
+}
+.basicSalaryList.borderRight {
+  border-right: 1px solid #e3e5f1;
+}
+.basicSalaryList.dropdown {
+  width: 300px;
+}
+.basicSalaryList.dropdown.toggle {
+  width: 100%;
+  white-space: normal;
+}
+.basicSalaryList.paddingBottom {
+  padding-bottom: 15px;
+}
+.basicSalaryList.dropdown.menu {
+  width: 385px;
+  margin: 5px 10px;
+}
+.basicSalaryList.cFormGroup {
+  margin: 0px 50px;
+}
+.basicSalaryList.cFormGroupChill {
+  margin: 0px 20px;
+  width: 110px;
+}
+.basicSalaryList.datePicker {
+  margin-left: 20px;
+}
+.basicSalaryList.iconRemoveDate {
+  position: absolute;
+  margin: 8px 0px 0px 100px;
+  color: #e3e5f1;
+}
+.basicSalaryList.theadcheckbox {
+  text-align: center;
+  vertical-align: middle;
+}
+.basicSalaryList.tableTh {
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.basicSalaryList.imgList {
+  width: 5px;
+  height: 12px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+.basicSalaryList.year-month {
+  border-top: 1px solid;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.basicSalaryList.tbodyCheckbox {
+  border-left: 3px solid #858bc3;
+  text-align: center;
+}
+.basicSalaryList.cCard {
+  background-color: #fafbfc !important;
+}
+.basicSalaryList.selectMonth {
+  width: 200px;
+  margin: 5px 10px;
+}
+.basicSalaryList.titleIcon {
+  width: 5px;
+  height: 12px;
+  margin-bottom: 2px;
+  margin-top: 12px;
+}
+.basicSalaryList.textField {
+  margin-top: -10px;
+}
+.basicSalaryList.payment {
+  width: 21px;
+  height: 18px;
+  margin-bottom: 2px;
+  margin-left: 0px;
+}
+.basicSalaryList.mmk {
+  border-bottom-left-radius: 1rem !important ;
+  border-top-left-radius: 1rem !important ;
+  align-items: center;
+  background-color: #e6e4f9 !important;
+  max-width: 100px;
+  display: flex;
+}
+.basicSalaryList.usd {
+  border-bottom-left-radius: 1rem !important ;
+  border-top-left-radius: 1rem !important ;
+  align-items: center;
+  max-width: 100px;
+  display: flex;
+}
+.input-basic-salary-register .MuiInputBase-input {
+  text-align: left !important;
+  padding-left: 15px;
+}
+.basic-salary-register-text-field-placeholder {
+  padding-left: 15px;
+  text-align: left;
+}
+.basicSalary.textField {
+  margin-top: 5px;
+}
+.basicSalary-text-field{
+  .MuiFormControl-root {
+    flex-direction: unset !important;
+  }
+}
+@media (min-width: 992px) {
+  .currency-pay-type {
+    display: unset;
+  }
+}
+.currency-pay-type {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .salary-amount {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+.salary-amount {
+  margin-left: 115px;
+}
+@media (max-width: 570px) {
+  .salary-from-to {
+    padding: 0px;
+  }
+}
+.salary-background-color {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+}
+.salary-background-color-amount {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  }
+}
+
+.salary-color {
+  width: 200px !important;
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  }
+}
+
+.perfect-attendant-setup {
+  width: 200px !important;
+
+
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: #fafbfc !important;
+}
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+}
+
+.salary-transfer-group {
+  width: 95% !important;
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: #fafbfc !important;
+}
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+}
+
+.background-textfield{
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: unset !important;
+  }
+}
+.business-background-color {
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: #fafbfc !important;
+  }
+  .MuiFormControl-root {
+    background-color: #fafbfc !important;
+  }
+}
+.expense-background-color {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  }
+}
+.basic-autocomplete {
+  .autocomplete-wrapper {
+    display: grid;
+    position: relative;
+    color: #7a7b7c !important;
+    .dropdown {
+      width: 100%;
+      text-align: left;
+      overflow: auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      position: absolute;
+      z-index: 99;
+      max-height: 100px;
+    }
+    .item {
+      display: block;
+      cursor: pointer;
+      padding-left: 15px;
+
+      .selected-item {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+
+      &:hover {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+    }
+  }
+
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+}
+/*Basic Salary List x_phu end*/
+/*Salary Transfer Setting List start*/
+.salaryTransferSettingList.titleicon {
+  width: 6px;
+  height: 12px;
+  margin-right: 20px;
+}
+.salaryTransferSettingList.payment-type {
+  width: 17px;
+  height: 14px;
+  margin-right: 20px;
+}
+.SalaryTransferSettingList.label-require {
+  color: red;
+}
+.salaryTransferSettingList.sizeLabel {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+.salaryTransferSettingList.card-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexDirection {
+  flex-direction: row !important;
+}
+/*Salary Transfer Setting List end*/
+
+.border-right {
+  border-right: 1px solid #e3e5f1;
+}
+.border-left {
+  border-left: 3px solid #858bc3;
+}
+.just-c-c {
+  justify-content: center;
+}
+
+.just-c-e {
+  justify-content: end;
+}
+
+.ddl-full-width {
+  width: 100% !important;
+}
+
+.ddl-auto-complete {
+  margin: 5px 10px;
+}
+
+.datefromstyle {
+  margin: 8px 0px 0px 100px;
+  position: absolute;
+  color: #e3e5f1;
+}
+
+.m020w110 {
+  margin: 0px 20px;
+  width: 110px;
+}
+
+.droplabel {
+  width: 300px;
+  margin: 5px 10px;
+}
+
+.white-space {
+  white-space: normal;
+}
+.padding-bottom15 {
+  padding-bottom: 15px;
+}
+.border-date {
+  width: 385px;
+  margin: 5px 10px;
+}
+.t-align-center {
+  text-align: center !important;
+}
+.t-align-left {
+  text-align: left !important;
+}
+.t-align-right {
+  text-align: right !important;
+}
+.title-Icon {
+  width: 5px;
+  height: 12px;
+  margin-bottom: 2px;
+}
+
+.ebedef {
+  color: #ebedef;
+}
+.perfect_attendance_setup.lbPerfectAttendance {
+  font-weight: bold;
+  font-size: 18px;
+  color: #4e57aa;
+}
+.payment-type {
+  width: 21px;
+  height: 18px;
+  margin-bottom: 2px;
+}
+.column-table {
+  width: 5px;
+  height: 12px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+.margin-right10 {
+  margin-right: 10px;
+}
+.margin-left10 {
+  margin-left: 10px;
+}
+.margin-bot10 {
+  margin-bottom: 10px;
+}
+.margin-bot20 {
+  margin-bottom: 20px;
+}
+.margin-left20 {
+  margin-left: 20px !important;
+}
+.icon-date {
+  margin: 0px 50px;
+}
+
+.ava-edit {
+  width: 30px;
+  height: 30px;
+}
+.ava-remove {
+  width: 30px;
+  height: 30px;
+}
+.f-r {
+  float: right;
+}
+.remove-err {
+  position: absolute;
+  right: 4px;
+  top: 8px;
+}
+.remove-err-reject {
+  position: absolute;
+  right: 4px;
+  top: -3.75px;
+}
+.f-l {
+  float: left;
+}
+/* BONUS RATE LIST start lt_nghia*/
+.bonus-rate-list-bonus-title-row {
+    margin-bottom: 30px;
+  }
+  .bonus-rate-list-title-col {
+    display: flex;
+  }
+  .bonus-rate-list-title-icon-img {
+    width: 6px;
+    height: 12px;
+  }
+  .bonus-rate-list-title-icon-img-title {
+    width: 6px;
+    height: 12px;
+    margin-top: 12px;
+  }
+  .bonus-rate-list-title-icon-img-col-table {
+    width: 6px;
+    height: 10px;
+    margin-bottom: 2px;
+  }
+  .bonus-rate-list-label-require {
+    color: red;
+  }
+  .bonus-rate-list-drop-dow-bonus-title {
+    max-width: 300px;
+  }
+  .bonus-rate-list-drop-dow-bonus-title-select {
+    width: 300px;
+    margin: 5px 10px;
+  }
+  .bonus-rate-list-drop-dow-bonus-year-select {
+    width: 200px;
+    margin: 5px 10px;
+  }
+  .bonus-rate-list-drop-dow-bonus-month-select {
+    width: 200px;
+    margin: 5px 10px;
+  }
+  .bonus-rate-list-drop-dow-bonus-limit-select {
+    width: 200px;
+    margin: 5px 10px;
+  }
+  .bonus-rate-list-card-bonus {
+    background-color: #fafbfc;
+  }
+  .bonus-rate-list-vertical-border {
+    border-right: 1px solid #e3e5f1;
+  }
+  .bonus-rate-list-limit-col {
+    margin-top: 8px;
+  }
+  .bonus-rate-list-btnSearch-col {
+    text-align: center;
+  }
+  .bonus-rate-list-include-tax-img {
+    width: 15px;
+    height: 15px;
+  }
+  .bonus-rate-list-edit-img {
+    width: 30px;
+    height: 30px;
+  }
+  .bonus-rate-list-delete-img {
+    width: 30px;
+    height: 30px;
+  }
+  .bonus-rate-list-card-color {
+    background-color: #fafbfc;
+    border-color: #d8dbe0;
+    label {
+      font-weight: normal;
+    }
+  }
+  .bonus-rate-list-tableTh {
+    text-align: left !important;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .bonus-rate-list-label-year-month {
+    margin-left: 30px;
+  }
+  .bonus-rate-list-card-border {
+    border-color: #d8dbe0;
+  }
+/* BONUS RATE LIST end lt_nghia*/
+
+.d-flex-inline {
+  display: inline-flex;
+}
+
+/* BONUS REGISTER start lt_nghia */
+.input-bonus-register {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #ffff inset !important;
+  }
+  .MuiInputBase-input {
+  text-align: left !important;
+  }
+}
+.card-bonus-register {
+  border-radius: 0px !important;
+  border-color: #d8dbe0;
+}
+.card-bonus-register .card-body {
+  padding: 0px;
+}
+.switch {
+  &-bonus-register-mxx {
+    display: unset;
+    .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(to right, #003399 0%, #ffffff 100%);
+    }
+    .c-switch-slider {
+      margin-top: 5%;
+    }
+  }
+  &-bonus-register-usd {
+    display: unset;
+    .c-switch-input:checked + .c-switch-slider {
+      color: #000000;
+      background: linear-gradient(to right, #a9f599, #ffffff 100%);
+    }
+    .c-switch-slider {
+      margin-top: 5%;
+    }
+    .c-switch-input:checked + .c-switch-slider::after {
+      left: 8px;
+      top: 11px;
+      color: #000015 !important;
+    }
+    .c-switch-input:checked + .c-switch-slider::before {
+      transform: translateX(28px) !important;
+    }
+  }
+  &-bonus-register-mxx-usd {
+    display: unset;
+    .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(to right, #003399 0%, #ffffff 100%);
+    }
+    .c-switch-slider {
+      background: linear-gradient(to right, #00cc00 0%, #ffffff 100%);
+      margin-top: 5%;
+    }
+    width: 50px !important;
+  }
+}
+.bonus-register-title-row {
+  margin-left: 0px;
+}
+
+.bonus-register-text-field-title {
+  margin-left: 50px !important;
+  width: 40% !important;
+  padding: 0px !important;
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    text-align: center;
+  }
+  .MuiInputBase-root {
+    margin-left: 0px !important;
+  }
+  flex-direction: column-reverse !important;
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #ffff inset !important;
+  }
+}
+.bonus-register-title-img {
+  width: 6px;
+  height: 12px;
+  margin-top: 12px;
+}
+.bonus-register-title-col {
+  display: flex;
+}
+.bonus-register-label-require {
+  color: red;
+}
+#bonus-register-card-color {
+  background-color: #fafbfc;
+  border-color: #d8dbe0;
+}
+.bonus-register-vertical-border {
+  border-right: 1px solid #e3e5f1;
+}
+.bonus-register-drop-dow-bonus-year-select {
+  width: 200px;
+  margin: 5px 10px;
+}
+.bonus-register-drop-dow-bonus-month-select {
+  width: 200px;
+  margin: 5px 10px;
+}
+.bonus-register-drop-dow-bonus-limit-select {
+  width: 200px;
+  margin: 5px 10px;
+}
+.bonus-register-limit-col {
+  margin-top: 8px;
+}
+.bonus-register-card-bonus {
+  background-color: #fafbfc;
+  border-color: #d8dbe0;
+  label {
+    font-weight: normal;
+  }
+}
+.bonus-register-limit-col {
+  margin-top: 8px;
+}
+.bonus-register-pay-type {
+  margin-left: 45%;
+}
+.bonus-register-basic-salary-border {
+  border-bottom: 3px solid #a0d06e;
+}
+.bonus-register-total-salary-border {
+  border-bottom: 3px solid #ffdf86;
+}
+.bonus-register-basic-salary-working-border {
+  border-bottom: 3px solid #aeb2d8;
+}
+.bonus-register-fixed-amount-border {
+  border-bottom: 3px solid #77c5d8;
+}
+.bonus-register-text-field-placeholder {
+  padding: 0px;
+  text-align: left;
+  .MuiInputBase-root {
+    margin-left: 0px !important;
+  }
+}
+.bonus-register-per-basic-salary-border {
+  border-bottom: 3px solid #d877ab;
+}
+.bonus-register-per-total-salary-border {
+  border-bottom: 3px solid #f56888;
+}
+.bonus-register-text-field-mul {
+  left: 3px;
+  margin-left: 50px;
+  padding: 0px;
+  width: 50%;
+  .MuiInputBase-root {
+    margin-left: 0px !important;
+  }
+  flex-direction: column-reverse !important;
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: unset !important;
+    text-align: center;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+}
+.bonus-register-text-field-add {
+  left: 3px;
+  margin-left: 60px;
+  padding: 0px;
+  width: 50%;
+  .MuiInputBase-root {
+    margin-left: 0px !important;
+  }
+  flex-direction: column-reverse !important;
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: unset !important;
+    text-align: center;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+}
+.bonus-register-add-mul-label {
+  margin-bottom: 4px;
+}
+.bonus-register-value-label {
+  margin-bottom: 4px;
+}
+.bonus-register-label-require {
+  color: red;
+}
+.bonus-register-radio {
+  position: relative;
+  top: 1px;
+  display: inline;
+  margin: 0.12rem;
+  margin-bottom: 0px;
+  margin-left: 4px;
+}
+.bonus-register-label-year-month {
+  margin-left: 30px;
+}
+/* BONUS REGISTER end lt_nghia */
+// Tc_Son css style : salary-transfer-setting-by-group
+.salary-transfer-setting-by-group-salary-btn {
+  background-image: linear-gradient(to bottom, #c4f79a, #ffffff);
+  color: #000000;
+  border-color: #e7e5e5;
+  border-radius: 6px;
+  min-width: 6rem;
+  height: 2.5rem;
+}
+.salary-transfer-setting-by-group-salary-btn:hover {
+  color: #000000;
+  background-image: linear-gradient(to bottom, #a9f599, #ffffff);
+}
+.salary-transfer-setting-by-group-salary-btn:focus {
+  color: #000000;
+  background-image: linear-gradient(to bottom, #a9f599, #ffffff);
+}
+.switch {
+  &-usd {
+    //   display: unset;
+    .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(to right, #ddf6c4 60%, #ffffff);
+      border: none;
+      &-button {
+        //   display: unset;
+        .c-switch-input:checked + .c-switch-slider {
+          background: linear-gradient(to right, #ddf6c4 60%, #ffffff);
+          border: 1px;
+        }
+      }
+      .c-switch-slider::after {
+        left: 1px;
+        color: #000000;
+      }
+    }
+    .c-switch-slider::after {
+      color: #000000 !important;
+    }
+  }
+}
+.salary-transfer-setting-by-group-mmk {
+  border-bottom-left-radius: 1rem !important ;
+  border-top-left-radius: 1rem !important ;
+}
+
+.td-currency {
+  background-color: #e6e4f9;
+}
+
+.salary-transfer-setting-by-group-radio-containt {
+  background-color: #ebedef;
+  padding: 20px;
+  width: 100%;
+  border: 0px;
+  .row {
+    align-items: center;
+  }
+  .radio {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px;
+      border-radius: 1rem;
+      border: 1px solid #a9a8a8;
+      min-width: 151px;
+    }
+  }
+  // @media (min-width: 465px) {
+  //   .col-md-2 {
+  //     max-width: none;
+  //     flex: 0 0 7.66667%;
+  //   }
+  // }
+  @media (min-width: 465px) {
+    .radio {
+      max-width: none;
+      flex: 0 0 7.66667%;
+    }
+  }
+}
+
+.sal-trans-group-img {
+  width: 40px;
+  height: 40px;
+}
+
+.sal-trans-group-border {
+  border-right: 1px solid #e3e5f1;
+}
+
+// RoleAndPermissionRegistration tc_son
+
+.role-and-permission-registration-chk-header {
+  margin: 1px;
+  margin-right: 3px;
+}
+
+.role-and-permission-registration-img-table-header {
+  width: 5px;
+  height: 12px;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+.role-and-permission-registration-chkbox-header {
+  border-left: 3px solid #858bc3;
+  text-align: center;
+}
+
+.role-and-permission-registration-labe-required {
+  color: red;
+}
+.role-permission-right {
+  float: left;
+}
+@media (min-width: 992px) {
+  .role-permission-right {
+    float: right !important;
+  }
+}
+
+
+// / EmployeePerfectAttendanceSetupList start lt_nghia /
+.emp-per-att-setup-list-drop-joined-date {
+  width: 385px;
+  margin: 5px 10px;
+}
+.emp-per-att-setup-list-drop-joined-date-form {
+  margin: 0px 50px;
+}
+.emp-per-att-setup-list-drop-joined-date-form-child {
+  margin: 0px 20px;
+  width: 110px;
+}
+.emp-per-att-setup-list-vertical-border {
+  margin: 10px 0px;
+  border-right: 1px solid #e3e5f1;
+}
+.emp-per-att-setup-list-i-remove {
+  position: absolute;
+  margin: 8px 0px 0px 100px;
+  color: #e3e5f1;
+}
+.perfect_attendance_setup_drop_label {
+  margin: 5px 10px;
+}
+.perfect_attendance_setup_drop_width {
+  width: 80% !important;
+}
+// / EmployeePerfectAttendanceSetupList end lt_nghia /
+
+// / EmployeeRoleRegistration start lt_nghia /
+.emp-role-regis-col-title {
+  margin-bottom: 10px;
+}
+.emp-role-regis-vertical-border {
+  border-right: 1px solid #e3e5f1;
+}
+.emp-role-regis-drop-select {
+  width: 300px;
+  margin: 5px 10px;
+}
+.emp-role-regis-drop-toggle-emp {
+  width: 100%;
+  white-space: normal;
+}
+.emp-role-regis-row {
+  padding-bottom: 15px;
+}
+.emp-role-regis-drop-joined-date {
+  width: 385px;
+  margin: 5px 10px;
+}
+.emp-role-regis-drop-joined-date-form {
+  margin: 0px 50px;
+}
+.emp-role-regis-drop-joined-date-form-child {
+  margin: 0px 20px;
+  width: 110px;
+}
+.emp-role-regis-vertical-border-date {
+  margin: 10px 0px;
+  border-right: 1px solid #e3e5f1;
+}
+.emp-role-regis-i-remove {
+  position: absolute;
+  margin: 8px 0px 0px 100px;
+  color: #e3e5f1;
+}
+.emp-role-regis-img-title {
+  width: 6px;
+  height: 10px;
+  margin-bottom: 2px;
+}
+.emp-role-regis-td-num {
+  border-left: 3px solid #858bc3;
+}
+.emp-role-regis-margin-left {
+  margin-left: 20px;
+}
+.emp-role-regis-tableTh {
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.emp-role-regis-card-border {
+  border-color: #d8dbe0;
+}
+/* EmployeeRoleRegistration end lt_nghia */
+
+/* Employee Allowance Registration */
+.employeeAllowanceRegistration {
+  .content-secondary {
+    color: #6b6d7a;
+    background-color: #f5f6f7;
+    border-color: #f1f2f4;
+    border-radius: 0.7rem;
+    border: 1px solid #e3e5f1;
+    margin-bottom: 10px;
+    input {
+      text-align: left !important;
+    }
+  }
+  .border-right {
+    border-right: 1px solid #e3e5f1;
+  }
+  .padding-right {
+    padding-right: 3rem !important;
+  }
+  hr {
+    border-top: 1px solid #e3e5f1 !important;
+  }
+  @media (max-width: 992px) {
+    .border-right {
+      border-right: none !important;
+    }
+    .padding-right {
+      padding: 0 !important;
+    }
+  }
+}
+/* End Employee Allowance Registration*/
+
+/* Payroll Rule Calcualtion Method Setup */
+.payrollRuleCalculationMethodSetup {
+  .content-secondary {
+    color: #6b6d7a;
+    background-color: #f5f6f7;
+    border-color: #f1f2f4;
+    border-radius: 0.6rem;
+    border: 1px solid #e3e5f1;
+    margin-bottom: 10px;
+  }
+  hr {
+    border-top: 1px solid #e3e5f1 !important;
+  }
+  .border-right {
+    border-right: 1px solid #e3e5f1;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  @media (max-width: 992px) {
+    .border-right {
+      border-right: none !important;
+    }
+  }
+  .c-switch-info .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(90deg, rgba(17, 7, 182, 1) 0%, rgba(65, 65, 196, 1) 35%, rgba(209, 205, 249, 1) 100%);
+    border-color: white;
+  }
+  .c-switch-info .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(
+      90deg,
+      rgba(70, 244, 130, 1) 0%,
+      rgba(111, 233, 156, 1) 35%,
+      rgba(205, 249, 214, 1) 100%
+    );
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+}
+/* End Payroll Rule Calcualtion Method Setup */
+
+/* Shift Normal Rule Register */
+.shiftNormalRuleRegister {
+  .overlay {
+    position: absolute;
+    z-index: -10;
+    background-color: #ffffff;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+    border-radius: 0.5rem;
+    width: auto;
+    padding: 0.7rem;
+    margin-left: 200px;
+  }
+  label.day-in-week {
+    width: 80px;
+  }
+  .boder {
+    border: 1px solid #d8dbe0;
+  }
+  .boder-radius {
+    border-radius: 0.7rem;
+  }
+  .bgroud-white {
+    background-color: white;
+  }
+
+  .day-active {
+    background: #b1aaf6;
+    border-radius: 0.8rem;
+    color: white;
+  }
+  .textshadow {
+    color: #63616159 !important;
+  }
+  .popup-day-in-week {
+    padding: 0.3rem 0.7rem;
+    font-size: small;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .min-width-100 {
+    min-width: 80px;
+  }
+  .label-disable {
+    color: #768192;
+  }
+  .shift-normal-rule-register-content-secondary {
+    input {
+      text-align: left !important;
+    }
+  }
+  .c-switch-info .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(90deg, rgba(17, 7, 182, 1) 0%, rgba(65, 65, 196, 1) 35%, rgba(209, 205, 249, 1) 100%);
+    border-color: white;
+  }
+  .c-switch-info .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(90deg, rgba(123, 190, 53, 1) 0%, rgb(145, 194, 93) 35%, rgba(205, 249, 214, 1) 100%);
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  .c-switch-label .c-switch-input:checked ~ .c-switch-slider::after {
+    color: black;
+  }
+  .content-secondary {
+    color: #6b6d7a;
+    background-color: #f5f6f7;
+    border-color: #f1f2f4;
+    border-radius: 0.6rem;
+    border: 1px solid #e3e5f1;
+    margin-bottom: 10px;
+    padding-top: 0.8rem;
+  }
+  .border-right {
+    border-right: 1px solid #e3e5f1;
+  }
+  .content-time {
+    width: 810px;
+  }
+  .padding-right-74 {
+    padding-right: 74px;
+  }
+  @media (max-width: 1200px) {
+    .border-right {
+      border-right: none !important;
+    }
+    .content-time {
+      width: 600px;
+    }
+    .padding-right-74 {
+      padding-right: 0.5rem !important;
+    }
+  }
+}
+.MuiPopover-paper {
+  border-radius: 0.8rem !important;
+}
+/* End Shift Normal Rule Register */
+
+//add allowance
+.subAllowanceRegisterList {
+  .expense-request-input-card-detail-subAllowance {
+    input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+      background-color: unset !important;
+    }
+    .MuiFormControl-root{
+      flex-direction:unset !important;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active
+    {
+    -webkit-box-shadow: 0 0 0 30px #f9f8f8 inset !important;
+    }
+  }
+    input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+        background-color: unset !important;
+        }
+  .add-allowance {
+    color: #4e57aa;
+    font-size: 20px;
+    margin: 20px;
+    margin-bottom: 0;
+  }
+
+  .icon-add {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .body-modal {
+    background-color: #ada7a714;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ada7a714;
+  }
+  .closeAdd {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    color: white;
+    right: -10px;
+    top: -10px;
+    font-size: 22px;
+    border-radius: 50px;
+    background-color: rgb(35, 58, 161) !important;
+    border: none;
+    width: 35px !important;
+    height: 35px !important;
+  }
+  //
+  .grid-row {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 10px;
+    div {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .right {
+      text-align: center;
+      background-color: #e553531c;
+    }
+    .right-col {
+      width: 200px;
+      button {
+        width: 200px;
+      }
+    }
+    .right-top {
+      border-radius: 10px 10px 0 0;
+    }
+    .right-bottom {
+      border-radius: 0 0 10px 10px;
+    }
+    .left h5 {
+      margin-left: 25%;
+    }
+    .left h4 {
+      margin-left: 25%;
+    }
+  }
+  .td-amount {
+    background-color: #f9b1153b;
+  }
+  .payType {
+    padding: inherit;
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 600px) {
+    .title-body {
+      margin-top: 0px;
+    }
+  }
+  @media (min-width: 600px) {
+    .title-body {
+      margin-top: -40px;
+    }
+  }
+  //Switch do you want to pay salary
+  .c-switch-info .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(90deg, rgb(35, 182, 96) 0%, rgb(52, 180, 106) 35%, rgba(209, 205, 249, 1) 100%);
+    border-color: white;
+  }
+  .c-switch-info .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(
+      90deg,
+      rgba(70, 244, 130, 1) 0%,
+      rgba(111, 233, 156, 1) 35%,
+      rgba(205, 249, 214, 1) 100%
+    );
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+}
+
+//lq_don add css Allowance list
+/*Allowance list*/
+.allowance-list {
+  .drop-search{
+    margin: 0 20px;
+    background-color: #fafbfc;
+    border: 1px solid #d8dbe0;
+    padding: 15px 10px;
+    width: 100%;
+    border-radius:5px
+  }
+  // icon img
+  .icon-clt {
+    cursor: pointer;
+  }
+  .radio-containt {
+    border-radius: 5px;
+    border: 1px solid #d8dbe0;
+    margin: 0 20px 0 20px;
+    background-color:#fafbfc;
+    padding: 10px;
+    width: 100%;
+    .row {
+      align-items: center;
+    }
+    .col-md-3 {
+      label {
+        font-weight: normal !important;
+        margin-bottom: 5px !important;
+        margin-top: 5px !important;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        width: 90%;
+        border: 1px solid #d8dbe0;
+      }
+    }
+  }
+}
+
+.border-lable{
+  border-bottom: 1px solid #A1A8F7;
+}
+
+.opacity-lable{
+  opacity: 0.5;
+}
+
+/* custom Leave name */
+
+.company-leave-setting {
+  .modal-header button{
+    margin-right:-33px !important;
+    width:2.2rem;
+    height: 2.2rem;
+    margin-top:-33px !important;
+    padding-bottom:0px !important;
+  }
+  .confirm-header{
+    text-align: center;
+  }
+  // lable leave name custom
+  .lable-leave-name {
+    text-align: center;
+    padding: 10px 0 10px 0 !important;
+    border-radius: 5px;
+    margin-left: 0px;
+    color: white;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .grid-row {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 10px;
+    div {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .right {
+      text-align: left !important;
+      background-color: white;
+    }
+    .right {
+      h5 {
+        margin-left: 20%;
+      }
+    }
+    .right-col {
+      width: 250px;
+      button {
+        width: 250px;
+      }
+    }
+    .right-top {
+      border-radius: 10px 10px 0 0;
+    }
+    .right-bottom {
+      border-radius: 0 0 10px 10px;
+    }
+    .left {
+      h5 {
+        font-weight: bold;
+        margin-left: 25%;
+      }
+      h4 {
+        margin-left: 25%;
+      }
+    }
+  }
+  //box paging
+  .box-paging {
+    position: absolute;
+    margin-top: 10px;
+    float: right;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    width: fit-content;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    label {
+      margin-bottom: 0px;
+    }
+  }
+  .title-leave {
+    label {
+      text-align: center;
+      padding: 10px 0 10px 0;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .card-auto-leave-setting {
+    border: 1px solid #d8dbe0;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f0f2f52d;
+    .card-header {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #f0f2f52d;
+    }
+    .card-body {
+      .row {
+        justify-content: center;
+        flex-wrap: nowrap;
+      }
+    }
+  }
+  // style switch
+  .c-switch-info .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(90deg, rgba(17, 7, 182, 1) 0%, rgba(65, 65, 196, 1) 35%, rgba(209, 205, 249, 1) 100%);
+    border-color: white;
+  }
+  .c-switch-info .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(
+      90deg,
+      rgba(70, 244, 130, 1) 0%,
+      rgba(111, 233, 156, 1) 35%,
+      rgba(205, 249, 214, 1) 100%
+    );
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .company-leave-setting {
+    .box-paging{
+      position: relative;
+      right: 10px;
+      bottom: 10px;
+    }
+    .title-leave {
+      button {
+        width: 100%;
+      }
+    }
+    .card-auto-leave-setting {
+      width: 80%;
+    }
+    .grid-row {
+      grid-template-columns: 50% 50%;
+      .left h5 {
+        margin-left: 0%;
+      }
+      .left h4 {
+        margin-left: 0%;
+      }
+      .right-col {
+        width: 80%;
+        button {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .allowance-list {
+    .input-allowancename {
+      margin: 0 auto;
+      width: 90% !important;
+    }
+    label {
+      margin: 0 auto !important;
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .company-leave-setting {
+    .switch-setup-choose-leave {
+      width: 80% !important;
+    }
+    .btn-lg {
+      width: 100% !important;
+    }
+    .dropdown-toggle {
+      width: 100% !important;
+    }
+    .title-leave button {
+      white-space: normal;
+    }
+    .grid-row .right-col {
+      width: 100%;
+    }
+  }
+}
+
+/* Start Allowance Register */
+.allowance-register {
+  .brc-card{
+    border: 1px solid #d8dbe0;
+    border-radius: 5px;
+    background: #fafbfc;
+    padding: 10px;
+  }
+  .ARGridContainer {
+    border: 1px solid #d8dbe0;
+    border-radius: 5px;
+    background: #fafbfc;
+    display: grid;
+    padding: 10px 15px;
+    &--180 {
+      grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+      row-gap: 1em;
+      column-gap: 2em;
+    }
+  }
+  .ARLabelWithCheck-swt{
+    font-weight: normal !important;
+    min-width: 160px;
+    padding: 10px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .ARLabelWithCheck {
+    font-weight: normal !important;
+    min-width: 160px;
+    padding: 10px;
+    margin: 0px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    span {
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &--hasBorder {
+      border: 1px solid #d8dbe0;
+      border-radius: 0.5em;
+      cursor: pointer;
+    }
+  }
+
+  .ARLDimAfterSwitch {
+    cursor: pointer;
+    & ::after {
+      background: lightgray;
+    }
+  }
+
+  .ARDisable {
+    cursor: not-allowed;
+  }
+  .c-switch-primary .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(315deg, #f0ecfc 0%, #4851ac 74%);
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(315deg, #d8e5ca 0%, #7bbe35 74%);
+    border-color: white;
+  }
+  .c-switch-warning .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(315deg, #fbeeca 0%, #ffd255 74%);
+    border-color: white;
+  }
+  .c-switch-primary .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  .c-switch-success .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  .c-switch-warning .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  @media only screen and (max-width: 375px) {
+    .ARGridContainer--180 {
+      grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+    }
+  }
+}
+.expense-request-text-field-allowance{
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+  .MuiFormControl-root{
+    flex-direction:unset !important;
+  }
+}
+#txtAllowanceTitle{
+  background-color: #fafbfc !important;
+}
+/* End Allowance Register */
+
+/* Start Shift Normal Rule Register */
+.shift-normal-rule-list {
+  .table thead{
+    background-image:none !important;
+  }
+  .SNRLCustomList {
+    list-style-type: "\22ee \22ee    ";
+    li {
+      margin: 10px;
+      ul {
+        li {
+          margin: 0px;
+        }
+      }
+    }
+  }
+  .SNRLFlexContainer {
+    display: flex;
+    align-items: baseline;
+  }
+  .SNRLIcon {
+    width: 30px;
+    cursor: pointer;
+  }
+  .SNRLCustomCaption {
+    caption-side: top;
+    text-align: right;
+  }
+  .SNRLLeftBorder {
+    border-left: 1px solid;
+  }
+  .SNRLWorkingHourCell {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 2fr 3fr;
+  }
+  .timeblock{
+    display:inline-flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    .leftBorder {
+      border: none;
+    }
+    .workingHourCell {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+/* End Shift Normal Rule Register */
+
+/* Start SSB Calculate Method */
+.ssbcalculation .border-drop {
+  border-right: 1px solid #e3e5f1;
+}
+.ssbcalculation .drop-search {
+  width: 300px;
+  margin: 5px 10px;
+}
+.ssbcalculation .row-center {
+  justify-content: center;
+}
+.ssbcalculation .date-picker {
+  margin: 0px 20px;
+  width: 110px;
+}
+.ssbcalculation {
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  .rate-method {
+    .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(to right, #003399 0%, #ffffff 100%);
+    }
+    .c-switch-slider {
+      background: linear-gradient(to right, #00cc00 0%, #ffffff 100%);
+      margin-top: 5%;
+    }
+  }
+}
+
+.ssbcalculation {
+  .line {
+    margin-left: 49% !important;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #ebedef inset !important;
+  }
+
+  .card {
+    border-radius: 1rem;
+    border-color: #ebedef !important;
+    animation: fadeIn .8s ease-out;
+  }
+
+  .expense-autocomplete {
+    .autocomplete-wrapper {
+      display: grid;
+      position: relative;
+      color: #7a7b7c !important;
+      .dropdown {
+        width: 100%;
+        text-align: left;
+        overflow: auto;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: absolute;
+        z-index: 99;
+        max-height: 100px;
+      }
+      .item {
+        display: block;
+        cursor: pointer;
+        padding-left: 15px;
+
+        .selected-item {
+          background-color: #1e90ff;
+          color: #fafbfc;
+        }
+
+        &:hover {
+          background-color: #1e90ff;
+          color: #fafbfc;
+        }
+      }
+    }
+    .autocomplete-wrapper input {
+      padding-left: unset !important;
+    }
+    .autocomplete-wrapper :disabled {
+      cursor: not-allowed;
+      background-color: transparent !important;
+    }
+  }
+
+  // .MuiInput-root{
+  //   margin-left: 0px !important;
+  // }
+
+  .MuiSelect-select:focus {
+    background-color: #ffffff !important;
+  }
+
+  .btn-active{
+    margin-right: 5px;
+    background: #FADEE6;
+  }
+
+  .btn {
+    border-radius: 10px !important;
+    margin: 5px;
+  }
+
+  .custom_backgrond{
+    input[type="email"],
+    input[type="text"],
+    input[type="password"],
+    input[type=number] {
+      background-color: #ebedef !important;
+    }
+
+    input[type="email"]:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type=number]:focus {
+      background-color: #ebedef !important;
+      box-shadow: none;
+    }
+  }
+
+  .c-switch-label .c-switch-input:checked ~ .c-switch-slider::after {
+    color: #000000c9;
+    text-transform: capitalize !important;
+    font-size: 130% !important;
+  }
+  .c-switch-label .c-switch-input ~ .c-switch-slider::after {
+    color: #000000c9;
+    text-transform: capitalize !important;
+    font-size: 130% !important;
+  }
+}
+
+.ssbcalculation .border-drop {
+  border-right: 1px solid #e3e5f1;
+}
+.ssbcalculation .drop-search {
+  width: 300px;
+  margin: 5px 10px;
+}
+.ssbcalculation .date-picker {
+  margin: 0px 20px;
+  width: 110px;
+}
+
+/* End SSB Calculate Method */
+
+/* Start Deduction */
+.deduction .avatar-list {
+  width: 5px;
+  height: 12px;
+  margin-bottom: 2px;
+}
+.deduction .title-lbl {
+  margin-left: 19px;
+  font-size: 15px;
+}
+.deduction .checkbox-lst {
+  flex-basis: 25%;
+  max-width: 100%;
+  //padding: 0 15px;
+}
+
+.deduction  .card-body .panel .panel-border {
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.deduction .card-body .panel .row{
+  margin: 0px !important;
+}
+.deduction .card-body label.card{
+    padding: 10px;
+    margin-bottom: 0px !important;
+}
+
+.deduction .radio-lst {
+  flex-basis: 20%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+.deduction .card-lst {
+  padding: 10px;
+}
+.deduction .margin-card {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.deduction .cards {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #fafbfc;
+}
+.deduction .img-timepicker {
+  width: 30px;
+  height: 30px;
+  margin-bottom: auto;
+}
+.deduction .lbl-timepicker {
+  margin-left: 30px;
+  margin-top: 6px;
+}
+.deduction .margin-payment {
+  margin-left: 10px;
+  //margin-top: 10px;
+}
+.deduction .card-deduction-type {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fafbfc;
+}
+.deduction .item-select {
+  flex-basis: auto;
+  max-width: 100%;
+  padding: 0 15px;
+  min-width: 200px;
+  margin: 5px;
+}
+
+.deduction {
+  @media (max-width: 750px) {
+    .card-period {
+     width: 60% !important;
+     
+    }
+  }
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  .lst-cal-method {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+  }
+
+  .custom_backgronds{
+    input[type="email"],
+    input[type="text"],
+    input[type="password"],
+    input[type=number] {
+      background-color: #fafbfc !important;
+    }
+  }
+  input[type="email"], input[type="text"], input[type="password"], input[type=number]
+  {
+    background-color: #fff !important;
+  }
+
+  label {
+    font-weight: normal;
+  }
+  .MuiFormControl-root{
+    width: auto !important;
+  }
+
+  .custom-width{
+    width: 100% !important;
+  }
+  .custom_backgrond{
+    input[type="email"],
+    input[type="text"],
+    input[type="password"],
+    input[type=number] {
+      background-color: #ebedef !important;
+    }
+
+    input[type="email"]:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type=number]:focus {
+      background-color: #ebedef !important;
+      box-shadow: none;
+    }
+  }
+  .btn-active{
+    margin-right: 5px;
+    background: #FADEE6;
+  }
+
+  .btn {
+    border-radius: 10px !important;
+    margin: 5px;
+  }
+
+  .card {
+    border-radius: 1rem;
+    border-color: #cdd1d4ba !important;
+    animation: fadeIn .8s ease-out;
+  }
+
+  .date-icon-epm-list {
+    position: absolute;
+    margin: 7px 5px 0px 0px;
+    width: 17px;
+    height: 17px;
+    right: 3rem;
+    color: #B1AAF6
+  }
+  .emp-list-i-move {
+    position: absolute;
+    right: 5rem;
+    margin: 9px 0px 0px 100px;
+    color: #e3e5f1;
+  }
+
+  .max_width_col {
+    min-width: 265px;
+  }
+  .custom_autofill_while{
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active
+    {
+    -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+    }
+  }
+
+  .custom_autofill_background{
+    input[type="email"],
+    input[type="text"],
+    input[type="password"],
+    input[type=number] {
+      background-color: #fafbfc !important;
+    }
+    input[type="email"]:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type=number]:focus {
+      background-color: #fafbfc !important;
+      box-shadow: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active
+    {
+    -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+
+  .panel-currency {
+    background: transparent;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .panel-1 {
+    height: 75px ;
+    background: #fafbfc;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .panel {
+    background: #fafbfc;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .label {
+    // font-weight: 'bold';
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .panel-border {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .panel-border-currency{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+  }
+
+  .item-select {
+    flex-basis: auto;
+    max-width: 100%;
+    padding: 0 15px;
+    min-width: 200px;
+  }
+  .customTimePicker {
+    margin-left: 20px !important;
+  }
+}
+
+.deduction .switch-mmk-usd {
+  .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(to right, #003399 0%, #ffffff 100%);
+  }
+  .c-switch-slider {
+    background: linear-gradient(to right, #00cc00 0%, #ffffff 100%);
+    margin-top: 5%;
+  }
+}
+
+.switch_paid {
+  display: unset;
+  .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(315deg, #b1aaf600 0%, #4237ad 74%);
+  }
+}
+
+.switch_paids {
+  color: black !important;
+  display: unset;
+  .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(315deg, #b1aaf600 0%, #fadee6 74%);
+  }
+}
+
+.deduction .text-basedon {
+  margin-top: -8px;
+  width: 30px;
+}
+
+.deduction .ultiply-added {
+  //width: 36% !important;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.deduction .color-star {
+  color: #01e6f1;
+  width: 20px;
+}
+
+.deduction {
+  .MuiInputBase-input {
+    text-align: left !important;
+  }
+  .deduct-period-box {
+    .row {
+      margin-left: unset;
+      margin-right: unset;
+    }
+    &-card {
+      float: right;
+      padding: 5px;
+      width: max-content;
+      margin-right: 25px;
+    }
+    tr {
+      background-color: #FFF !important;
+    }
+    th {
+      text-align: left;
+      vertical-align: middle !important;
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .card-header {
+      background-color: #fafbfc;
+    }
+    .panel-border {
+      background-color: white;
+      width: max-content;
+      border-radius: 1rem;
+      margin: 30px 0 30px 70px;
+    }
+    .border-1 {
+      border-radius: 1rem !important;
+    }
+  }
+}
+
+.deduclist {
+  label {
+    font-weight: normal;
+  }
+
+  .card{
+    border-color: #c4c9d0 !important;
+  }
+  .panel {
+    background: #fafbfc;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .label {
+    // font-weight: 'bold';
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .panel-border {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .item-select {
+    flex-basis: auto;
+    max-width: 100%;
+    padding: 0 15px;
+    min-width: 200px;
+  }
+  th {
+    text-align: left;
+    vertical-align: middle !important;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+/* End Deduction */
+
+/* Start OverTime Rate */
+.ratelist {
+  .panel {
+    background: #505253;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .label {
+    font-weight: 'bold';
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .panel-border {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .item-select {
+    flex-basis: auto;
+    max-width: 100%;
+    padding: 0 15px;
+    min-width: 200px;
+  }
+}
+
+// Salary Transfer Setting TC_SON START
+// Salary Transfer Setting Start
+.salary-transfer-input {
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+  }
+}
+
+  .table.salary-transfer-table tbody tr:first-child td:last-child {
+    border-bottom-right-radius: 14px !important;
+    -moz-border-radius-bottomright: 14px !important;
+    -webkit-border-bottom-right-radius: 14px !important;
+  }
+
+  .table.salary-transfer-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 0px !important;
+    -moz-border-radius-bottomright: 0px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+  }
+
+
+.salary-transfer-setting-containt {
+  background-color: #ebedef;
+  padding: 20px;
+  width: 100%;
+  border: 0px;
+  .row {
+    align-items: center;
+  }
+  .radio-setting {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px;
+      border-radius: 1rem;
+      border: 1px solid #c5c4c4;
+      min-width: 151px;
+    }
+  }
+  .radio-setting-small {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px;
+      border-radius: 1rem;
+      border: 1px solid #c5c4c4;
+      min-width: 96px;
+    }
+  }
+
+  @media (min-width: 465px) {
+    .col-md-2 {
+      max-width: none;
+      flex: 0 0 7.66667%;
+    }
+  }
+}
+
+@media (max-width: 449px) {
+
+  .inline-salary{
+    display: grid !important;
+    margin-right: 20% !important;
+    margin-left: 20% !important;
+
+    .mr-5 {
+      margin-right: 0% !important;
+      margin-bottom: 5px !important;
+    }
+    .mr-2 {
+      margin-right: 0% !important;
+      margin-bottom: 5px !important;
+    }
+
+  }
+
+}
+// Salary Transfer Setting End
+
+// Currency Icon Start
+.currency-icon {
+  width: 15px;
+  height: 15px;
+}
+// Currency Icon End
+
+// Salary Transfer Setting btn start
+.salary-transfer-setting-btn {
+  background-image: linear-gradient(to bottom, #d7f7bc, #ffffff);
+  color: #000000;
+  border-color: #e7e5e5;
+  border-radius: 6px;
+  min-width: 6rem;
+  height: 2.5rem;
+}
+.salary-transfer-setting-btn:hover {
+  color: #000000;
+  background-image: linear-gradient(to bottom, #b9e0b2, #ffffff);
+}
+.salary-transfer-settingy-btn:focus {
+  color: #000000;
+  background-image: linear-gradient(to bottom, #a7d49d, #ffffff);
+}
+// Salary Transfer Setting btn end
+// Salary Transfer Setting TC_SON END
+/* Start Employee List */
+.emp-list-col-title {
+  margin-bottom: 10px;
+}
+.emp-list-vertical-border {
+  border-right: 1px solid #e3e5f1;
+}
+.emp-list-btnSearch-col {
+  text-align: center;
+}
+.emp-list-btnExport-col {
+  text-align: center;
+}
+.input-emp-list .MuiInputBase-input {
+  text-align: left !important;
+  color: #3c4b64;
+}
+.date-icon-epm-list {
+  position: absolute;
+  margin: 7px 5px 0px 0px;
+  width: 17px;
+  height: 17px;
+  right: 1rem;
+  color: #B1AAF6;
+  z-index: 99;
+}
+.emp-list-i-move {
+  position: absolute;
+  right: 3rem;
+  margin: 9px 0px 0px 100px;
+  color: #e3e5f1;
+}
+.emp-list-i-move-resign {
+  position: absolute;
+  right: 3rem;
+  margin: 15px 0px 0px 100px;
+  color: #e3e5f1;
+}
+.emp-list-popup {
+  max-width: 200px;
+    // margin-left: 30px;
+}
+.emp-list-modal > div > div > div > div {
+  border-radius: 0px !important;
+}
+.emp-list-label-require {
+  color: red;
+}
+.emp-list-label-popup {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.emp-list-icon-tb {
+  margin-right: 5px !important;
+  color: #b1aaf6;
+}
+.emp-list-remove-icon-popup {
+  position: absolute;
+  right: 4px;
+  top: 0px;
+}
+.emp-list-card-border {
+  border-radius: 5px !important;
+}
+.not-allowed{
+
+  cursor: not-allowed! important;
+
+ }
+ .epm-list-img {
+  width: 30px;
+  height: 30px;
+}
+.epm-list-icon-resign {
+  border: 2px solid red;
+  border-radius: 50%;
+
+}
+.responsive-tableTh {
+  text-align: left !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+}
+.emp-list-margin-left{
+  margin-left: 20px;
+}
+.emp-list-col-title {
+  margin-bottom: 10px;
+}
+.emp-list-title-icon-img-col-table {
+  width: 6px;
+  height: 10px;
+  margin-bottom: 2px;
+}
+.emp-list-dpk-resign {
+    flex-direction: column-reverse !important;
+}
+.emp-list-card-border-color {
+  border-color: #c4c9d0;
+}
+.emp-list-autocomplete {
+  .autocomplete-wrapper {
+    display: grid;
+    position: relative;
+    color: #7a7b7c !important;
+    .dropdown {
+      width: 100%;
+      text-align: left;
+      overflow: auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      position: absolute;
+      z-index: 99;
+      max-height: 100px;
+    }
+    .item {
+      display: block;
+      cursor: pointer;
+      padding-left: 15px;
+
+      .selected-item {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+
+      &:hover {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+    }
+  }
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+}
+.employee-allowance-list{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+}
+.employeeAllowanceRegistration{
+  .expense-request-input-card-detail-Allowance-Amount {
+    input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+      background-color: unset !important;
+    }
+    .MuiFormControl-root{
+      flex-direction:unset !important;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active
+    {
+    -webkit-box-shadow: 0 0 0 30px #f5f6f7 inset !important;
+    }
+  }
+  .MuiFormControl-marginNormal{
+    margin-bottom: 0px !important;
+  }
+  #dropPayDate{
+    background-color: #f5f6f7 !important;
+  }
+  #txtAllowanceAmount{
+    background-color: #f5f6f7 !important;
+  }
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+}
+.payrollRuleCalculationMethodSetup{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+}
+.emp-list-input {
+  .MuiFormControl-root {
+    flex-direction: unset !important;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #ffff inset !important;
+  }
+}
+.emp-list-input-dpk {
+  .MuiInputBase-input {
+    color: black;
+  }
+}
+.emp-list-dpk {
+  .MuiFormControl-root {
+    width: 100% !important;
+  }
+}
+/* End Employee List */
+.c-sidebar-nav-dropdown.c-show > .c-sidebar-nav-dropdown-items {
+  max-height: 100% !important;
+}
+
+// Menu Bar
+.header-menu-bar {
+  background-color: #B1AAF6;
+  padding: 0rem;
+  text-align: center;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+}
+
+.color-nav {
+  color: #ffffff;
+}
+.color-nav.active {
+  border-bottom: solid;
+  margin-bottom: 10px;
+}
+.color-nav:hover{
+  color: #ffffff8e;
+}
+.closeAcountRegister {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  color: white;
+  right: -10px;
+  top: -10px;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: rgb(35, 58, 161) !important;
+  border: none;
+}
+/*Employee Personal start**/
+$fontSize: 19px;
+$lineWidth: 2px;
+$lineColor: #CCC;
+$backgroundColor: #FFF;
+$xPadding: 0px;
+
+.textbox-lines {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  background-attachment: local;
+  background-image:
+    linear-gradient(to right, $backgroundColor, $backgroundColor $xPadding, transparent $xPadding),
+    linear-gradient(to left, $backgroundColor, $backgroundColor $xPadding, transparent $xPadding),
+    repeating-linear-gradient(
+      #FFF,
+      #FFF 36px,
+      #CCC 36px,
+      currentcolor 37px
+    );
+  line-height: 38px;
+  resize: none;
+}
+.change_picture{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  padding: 10px;
+}
+.change_picture3 {
+  display: none;
+}
+.personal-flex {
+  display: flex;
+  position: absolute;
+}
+@media (max-width: 830px) {
+  .personal-flex {
+all: unset;
+  }
+}
+.employee-personal-input {
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: unset !important;
+    text-align: left !important;
+  }
+}
+.employee-personal .MuiInputBase-input {
+  text-align: left !important;
+  color: #3c4b64;
+}
+.employee-personal-btn {
+  background-image: linear-gradient(to bottom, #d7f7bc, #ffffff);
+  color: #000000;
+  border-color: #e7e5e5;
+  border-radius: 6px;
+  min-width: 6rem;
+  height: 2.5rem;
+}
+/*Employee Personal End**/
+.input-basic-salary-approver .MuiInputBase-input {
+  text-align: left !important;
+}
+
+.table-hover {
+  td {
+    text-align: left !important;
+  }
+  td:hover {
+    background-color: rgb(223, 223, 223);
+  }
+}
+/** End Style React-Autocomplete */
+
+/* img title table -suballowance and payroll list*/
+.imgTitle{
+  width : 5px;
+  height : 12px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+// Family member
+.family-member-register-list{
+  
+  .header-menu-bar {
+    background-color: #B1AAF6;
+    padding: 0rem;
+    text-align: center;
+  }
+
+  .color-nav {
+    color: #ffffff;
+  }
+  .color-nav.active {
+    border-bottom: solid;
+    margin-bottom: 10px;
+  }
+  .color-nav:hover{
+    color: #ffffff8e;
+  }
+
+  #txtFamilyMembersName, #dropRelationship ,#txtNRCNumber,#txtOccupation {
+    text-align: left !important;
+  }
+  .form-btn-green {
+    background-image: linear-gradient(to bottom, #D6F8B3, #FFFFFF);
+    color: #000000;
+    border-color: #E7E5E5;
+    border-radius: 6px;
+    min-width: 6rem;
+    height: 2.5rem;
+  }
+  .form-btn-green:hover {
+      color: #000000;
+      background-image: linear-gradient(to bottom, #a7f857, #FFFFFF);
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      transition: all .2s ease-out;
+  }
+  .form-btn-green:focus {
+      color: #000000;
+      background-image: linear-gradient(to bottom, #a7f857, #FFFFFF);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important;
+  }
+  .addNameFamily{
+    padding-right: 5rem;
+  }
+  .addRelationship{
+    padding-left: 5rem;
+  }
+  .lableLiving{
+    border-bottom: 2px solid #4851ac;
+    padding-bottom: 2px;
+  }
+   //Switch do you want to living
+   .c-switch-info .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(90deg, rgb(98, 128, 226) 0%, rgb(129, 136, 240) 35%, rgba(209, 205, 249, 1) 100%);
+    border-color: white;
+  }
+  .c-switch-info .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+
+  .c-switch-success .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(
+      90deg,
+      #D6F8B3 0%,
+      #D6F8B3 35%,
+      rgba(205, 249, 214, 1) 100%
+    );
+    border-color: white;
+  }
+
+  .c-switch-success .c-switch-input:checked + .c-switch-slider::before {
+    border-color: white;
+  }
+  .c-switch-label .c-switch-input:checked ~ .c-switch-slider::after {
+    left: 1px;
+    color: #000015;
+    content: attr(data-checked);
+}
+.switch-alive-die {
+  .c-switch-input:checked + .c-switch-slider {
+    background: linear-gradient(to right,#bbe78e 0%, #FFFFFF 100%);
+  }
+  .c-switch-slider {
+    background: linear-gradient(to right, #003399 0%, #6e63d4 100%);
+    margin-top: 5%;
+  }
+}
+
+ @media screen and (max-width: 1000px){
+  .addNameFamily, .addRelationship{
+    padding: 0 1.25rem 0 1.25rem;
+  }
+ }
+}
+/* Log History List start */
+.log-history-list {
+  &-title-icon {
+    vertical-align: middle;
+  }
+  &-label {
+    font-weight: bold;
+    margin-bottom: unset;
+    vertical-align: middle;
+  }
+  &-padding-left {
+    padding-left: 3rem !important;
+  }
+  &-padding-right {
+    padding-right: 3rem !important;
+  }
+  .scrollcard {
+    height: 245px;
+    overflow: scroll;
+  }
+  // .log-his-list-text {
+    .MuiInputBase-input {
+      text-align: left !important;
+    }
+    .MuiSelect-select:focus {
+      background-color: #ffffff !important;
+    }
+  // }
+  .card {
+        border-radius: 1rem;
+        border-color: #cdd1d4ba !important;
+  }
+  .item-select {
+    flex-basis: auto;
+    // max-width: 100%;
+    padding: 15px;
+    // min-width: 200px;
+  }
+  .mar-search{
+    margin-left: 10px;
+    margin-right: 10px
+  }
+  .panel {
+    width: 100%;
+    padding-left: 1rem;
+    background: #fafbfc;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  table tr .td-no {
+    width: 5%;
+  }
+  .td-emp-id {
+    width: 10%;
+  }
+  .td-emp-name {
+    width: 15%;
+  }
+  .td-date {
+    width: 15%;
+  }
+  .td-action {
+    width: 35%;
+    max-width: 400px;
+  }
+  .td-status {
+    width: 10%;
+  }
+  .td-platform {
+    width: 10%;
+  }
+  th {
+    text-align: left;
+    vertical-align: middle !important;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (min-width: 992px) {
+    .pr-lg-5, .px-lg-5 {
+      padding-right: 5rem !important;
+    }
+    .pl-lg-5, .px-lg-5 {
+      padding-left: 5rem !important;
+    }
+    .mr-lg-5, .mx-lg-5 {
+      margin-right: 5rem !important;
+    }
+    .ml-lg-5, .mx-lg-5 {
+      margin-left: 5rem !important;
+    }
+  }
+}
+/* Log History List end */
+.background-gray{
+   input{
+    background-color: #f5f6f7 !important;
+   }
+   input:focus{
+    background-color: #f5f6f7 !important;
+   }
+}
+.salary-calculate-setting {
+  .expense-request-input-card-detail-salary-calculate {
+    input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+      background-color: unset !important;
+    }
+    .MuiFormControl-root{
+      flex-direction:unset !important;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active
+    {
+    -webkit-box-shadow: 0 0 0 30px #f5f6f7 inset !important;
+    }
+  }
+  .box-container {
+    color: #6b6d7a;
+    background-color: #f5f6f7;
+    border-color: rgb(200, 204, 208);
+    border-radius: 1rem;
+    border: 1px solid #e3e5f1;
+    padding: 0.7rem 1rem;
+    margin: 0.5rem 0 0 1rem;
+  }
+  .box-container-grid {
+    display: flex;
+  }
+  .box-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid rgb(200, 204, 208);
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 0 2rem 0 0;
+  }
+  .box-box-container {
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin: 0;
+  }
+  .box-content span {
+    margin-right: 1.5rem;
+  }
+  .input-col {
+    margin-right: 2rem;
+  }
+  .mr-10 {
+    margin-right: 5rem !important;
+  }
+  .border-right {
+    border-right: 1px solid #e3e5f1;
+  }
+  .text-align-left {
+    text-align: left !important;
+  }
+  .text-tax-include {
+    color: #46bbf9;
+  }
+  .text-total-include{
+    color: #f7503e;
+  }
+  .btn-navigation {
+    background-image: linear-gradient(to bottom, #c1e599, #FFFFFF) !important;
+  }
+  .btn-navigation:hover {
+    background-image: linear-gradient(to bottom, #83c03e, #FFFFFF) !important;
+  }
+  .popup-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .item {
+      margin-right: 15px;
+      margin-top: 1.5rem;
+    }
+    .margin-left-3 {
+      margin-left: 1rem;
+    }
+  }
+  .margin-right-4 {
+    margin-right: 1.5rem;
+  }
+  .h6 {
+    font-size: 0.6rem !important;
+  }
+  .padding-right-3 {
+    padding-right: 1rem;
+  }
+  .padding-right-4 {
+    padding-right: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    .box-container {
+      padding: 0.2rem 1rem 1rem 1rem;
+    }
+    .box-container-grid {
+      flex-direction: column !important;
+    }
+    .box-content {
+      margin: 0.5rem 0 0 0;
+    }
+    .box-box-container {
+      padding: 0.5rem 1rem 1rem 1rem;
+      margin: 0.5rem 0 0 0;
+    }
+    .input-col {
+      margin-right: 0 !important;
+    }
+    .border-right {
+      border-right: none !important;
+    }
+    .input-reponsive {
+      margin-top: 1.5rem !important;
+    }
+    .wrapper {
+      grid-template-columns: 1fr;
+      .item {
+        margin-right: 0;
+      }
+      .margin-left-3 {
+        margin-left: 0;
+      }
+    }
+    .padding-right-4 {
+      padding-right: 0;
+    }
+    .padding-right-3 {
+      padding-right: 0;
+    }
+  }
+  @media (max-width: 465px) {
+    .inline-salary{
+      display: grid !important;
+    }
+    .margin-right-4 {
+      margin-right: 0;
+    }
+  }
+}
+
+
+/** Start Style React-Autocomplete */
+//ht_nguyen 04262021
+.custom-autocomplete{
+  .autocomplete-wrapper {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    div {
+      width: 100%;
+    }
+    input {
+      border: 1px solid #cecece;
+      width: 100%;
+      &:focus {
+        border-color: #958bef;
+      }
+      padding-left: 15px;
+    }
+    .dropdown {
+      width: 100%;
+      text-align: left;
+      overflow: auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      position: absolute;
+      z-index: 99;
+      max-height: 100px;
+    }
+    .item {
+      display: block;
+      cursor: pointer;
+      padding-left: 15px;
+
+      .selected-item {
+        background-color: #1E90FF;
+        color: #fafbfc;
+      }
+
+      &:hover {
+        background-color: #1E90FF;
+        color: #fafbfc;
+      }
+    }
+  }
+}
+/** End Style React-Autocomplete */
+
+
+
+/* img title table*/
+.imgTitle{
+  width : 5px;
+  height : 12px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+
+// htnguyen 20210507
+/** Start style EmployeeDataEntry */
+
+.employee-data-entry{
+  .page-item.active .page-link{
+    background-color: #7bbe35;
+    border-color: #7bbe35;
+  }
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+
+  fieldset{
+    margin:20px;
+    padding:20px;
+    background:#fafbfc;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #ececec;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+  }
+  .icon-btn{
+    color:#4e57aa;
+  }
+  .MuiSelect-icon{
+    color:#4e57aa;
+  }
+  .MuiNativeSelect-icon{
+    color: #4e57aa;
+  }
+  .MuiInputBase-input{
+    text-align: left !important;
+  }
+  .MuiInputLabel-shrink{
+    font-size: 1.2rem;
+    color:#3c4b64 !important;
+  }
+  .MuiInputBase-input{
+    color:#768192;
+  }
+  .page-link{
+    color:#3c4b64;
+  }
+  .borderBox{
+    color: #ececec;
+  }
+  .tableContainer{
+    margin: auto;
+  }
+  .tableWidth{
+    margin: auto;
+  }
+  .paginationContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/** End style EmployeeDataEntry*/
+
+// .style-title-approver-list{
+//   padding: 17px 0px 0px 28px;
+//   margin-bottom: -15px;
+//   font-size: 1.3125rem;
+//   font-weight: bold;
+//   color: #4e57aa;
+// }
+// .style-label-approver-list{
+//   padding: 17px 0px 0px 28px;
+//   font-size: 16px;
+// }
+.style-position{
+  padding: 17px 0px 0px 17px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.style-department-approver{
+  padding: 17px 0px 0px 14px;
+  font-size: 16px;
+}
+.style-auto-name-approver{
+  display: grid;
+  padding-left: 28px;
+  width: 96%;
+}
+/* nt_linh*/
+.reportForPayroll{
+  #dropDepartment{
+    text-align: left !important;
+   }
+  .formLoad{
+    border: 1px solid #ebedef;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: auto auto auto;
+    background-color: #ebedef69;
+    margin: 5px;
+  }
+  .boderColum{
+    // padding: 10px;
+    border-right:2px white solid ;
+    border-bottom:1px white solid ;
+    text-align: center;
+    font-size: 15px;
+    color: #321fdbe3;
+  }
+  .boderColum:nth-child(3n){
+    border-right: none;
+  }
+  .linkDate{
+    cursor: pointer;
+     color:#321fdbe3;
+    font-size:15px;
+  }
+  .linkDate:hover{
+    color: #5a73e4f5 !important;
+  }
+  @media (max-width: 390px) {
+    .formLoad{
+      grid-template-columns: auto auto;
+    }
+    .boderColum:nth-child(3n){
+      border-right: 2px white solid;
+    }
+    .boderColum:nth-child(2n){
+      border-right: none;
+    }
+  }
+}
+
+/* end of nt_linh*/
+/* Employee Deduction List Start */
+.employee-deduction-list {
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+
+  .line {
+    margin-left: 49% !important;
+  }
+  // .MuiInput-underline::before{
+  //   border-bottom: 1px solid #0000006b !important;
+  // }
+  // .MuiInputBase-root{
+  //   margin-left: 0px !important;
+  // }
+
+  // .MuiTextField-root {
+  //   border-bottom: none !important;
+  // }
+
+  // .autocomplete-wrapper input {
+  //   padding-left: 0px !important;
+  // }
+
+  label {
+    font-weight: normal;
+  }
+
+  .card {
+    border-radius: 1rem;
+    border-color: #d8dbe0;
+    animation: fadeIn .8s ease-out;
+  }
+
+  .btn-active{
+    margin-right: 5px;
+    background: #FADEE6;
+  }
+  .btn {
+    border-radius: 10px !important;
+    margin: 5px;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="password"],
+  // input[type="date"],
+  input[type=number] {
+    background-color: transparent !important;
+  }
+
+  input[type="email"]:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  // input[type="date"]:focus,
+  input[type=number]:focus {
+    background-color: transparent !important;
+    box-shadow: none;
+    // border: #D8DBE0 !important;
+  }
+
+  .row {
+    margin-left: unset;
+    margin-right: unset;
+  }
+  &-card {
+    float: right;
+    padding: 5px;
+    width: max-content;
+    margin-right: 25px;
+    .btn {
+      width: 100px;
+    }
+  }
+  tr {
+    background-color: #fff !important;
+  }
+  th {
+    text-align: left;
+    vertical-align: middle !important;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .panel-border {
+    background-color: white;
+    width: max-content;
+    border-radius: 1rem;
+    margin: 30px 0 30px 70px;
+  }
+  .border-1 {
+    border-radius: 1rem !important;
+  }
+  .MuiInputBase-input {
+    text-align: left !important;
+  }
+  .MuiSelect-select:focus {
+    background-color: #ffffff !important;
+  }
+  // .autocomplete-wrapper {
+  //   display: grid;
+  //   position: relative;
+  //   color: #7a7b7c !important;
+  //   .dropdown {
+  //     width: 100%;
+  //     text-align: left;
+  //     overflow: auto;
+  //     background-color: #ffffff;
+  //     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  //       0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  //     position: relative;
+  //     z-index: 99;
+  //     max-height: 100px;
+  //   }
+  //   .item {
+  //     display: block;
+  //     cursor: pointer;
+  //     padding-left: 15px;
+
+  //     .selected-item {
+  //       background-color: #1e90ff;
+  //       color: #fafbfc;
+  //     }
+
+  //     &:hover {
+  //       background-color: #1e90ff;
+  //       color: #fafbfc;
+  //     }
+  //   }
+  // }
+  .select{
+    // margin-left: 10px;
+    text-align: left;
+    border-radius: unset;
+    width: 100%;
+    font-size: 15px;
+    border-bottom: 1px solid #99999c;
+    // background-color: #fafbfc;
+    color: #7a7b7c;
+    border-top: initial;
+    border-left: initial;
+    border-right: initial;
+    padding-left: 0px;
+  }
+  .input-autocomplete{
+    color: #0d7eee !important;
+  }
+}
+/* Employee Deduction List End */
+
+.individual-working{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+
+  .card {
+    border-radius: 1rem;
+    border-color: #ebedef !important;
+    animation: fadeIn .8s ease-out;
+  }
+  .line {
+    margin-left: 49% !important;
+  }
+
+}
+
+.individual-working .mr-left input {
+  padding-left: 0px !important;
+}
+.individual-working .avatar-list {
+  width: 5px;
+  height: 12px;
+  margin-bottom: 2px;
+  margin-left: -13px;
+}
+.individual-working .individual-text{
+  display: grid;
+  .dropdown {
+    width: 95%;
+    text-align: left;
+    overflow: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    z-index: 99;
+    max-height: 100px;
+  }
+  .item {
+    display: block;
+    cursor: pointer;
+    padding-left: 15px;
+
+    .selected-item {
+      background-color: #1e90ff;
+      color: #fafbfc;
+    }
+
+    &:hover {
+      background-color: #1e90ff;
+      color: #fafbfc;
+    }
+  }
+}
+.individual-working .MuiInputBase-input {
+  text-align: left !important;
+}
+.individual-working .total-leave {
+  padding-left: 40px;
+  padding-right: 40px
+}
+.individual-working .label-disable {
+  color: #768192;
+}
+
+
+.panel-employee-deduction{
+  background: #fafbfc;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.panel-name{
+  background: transparent;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.employee-deduction{
+  .line {
+    margin-left: 49% !important;
+  }
+
+  .autocomplete-wrapper input{
+    background-color: #fafbfc !important;
+  }
+  #date-picker-dialog{
+    background-color: #fafbfc !important;
+    border-radius: 5px !important;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="password"],
+  // input[type="date"],
+  input[type=number] {
+    background-color: transparent !important;
+  }
+
+  input[type="email"]:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  // input[type="date"]:focus,
+  input[type=number]:focus {
+    background-color: transparent !important;
+    box-shadow: none;
+    // border: #D8DBE0 !important;
+  }
+  .MuiFormControl-root{
+    width: 100%  !important;
+  }
+
+  @media (min-width: 992px) {
+    .padding-left-employee-deduction {
+      padding-left: 45px;
+    }
+
+  }
+
+  .MuiInputLabel-shrink{
+    font-size: 1.2rem;
+    color:#3c4b64 !important;
+    font-weight: bold;
+  }
+
+  .form-control:disabled{
+    background-color: #fafbfc;
+  }
+  .MuiInputBase-input{
+    padding: 6px 0 5px !important;
+  }
+}
+/** End style EmployeeDataEntry*/
+// 5/31/2021
+//ht_nguyen style for .report-for-attendance
+.report-for-attendance{
+  .MuiSelect-select{
+    padding-left: 10px;
+  }
+  .MuiSelect-icon{
+    color:#4e57aa;
+  }
+  .MuiInput-formControl{
+    margin-top: 0;
+  }
+  .MuiInputBase-input{
+    color:#768192;
+  }
+}
+.br-radi{
+  border-radius: 0rem !important;
+}
+// end style for .report-for.attendance
+
+/** Start Report For Transfer Salary Pay*/
+.emp-date-align {
+  margin-left: 20px;
+  .MuiInputBase-input {
+    text-align: left !important;
+  }
+
+}
+/** Start CheckInCheckOutRequest */
+.checkIO-request-label-require {
+  color: red;
+}
+.checkIO-request-btn-clock-in {
+  background-image: linear-gradient(to bottom, #7ec048, #ffffff);
+  color: #000000;
+  border-color: #e7e5e5;
+  border-radius: 6px;
+  min-width: 6rem;
+  height: 2.5rem;
+}
+.checkIO-request-btn-clock-in:hover {
+  color: #000000;
+  background-image: linear-gradient(to bottom, #abf56f, #ffffff);
+}
+.checkIO-request-btn-clock-in:focus {
+  color: #000000;
+  background-image: linear-gradient(to bottom, #abf56f, #ffffff);
+}
+.checkIO-request-btn-clock-out {
+  background-image: linear-gradient(to bottom, #e47d70, #ffffff);
+  color: #000000;
+  border-color: #e7e5e5;
+  border-radius: 6px;
+  min-width: 6rem;
+  height: 2.5rem;
+}
+.checkIO-request-btn-clock-out:hover {
+  color: #000000;
+  background-image: linear-gradient(to bottom, #eea49b, #ffffff);
+}
+.checkIO-request-btn-clock-out:focus {
+  color: #000000;
+  background-image: linear-gradient(to bottom, #eea49b, #ffffff);
+}
+.checkIO-request-select{
+  .MuiInputBase-input {
+    text-align: left !important;
+    padding-left: 10px;
+    padding-top: 19px;
+  }
+  .MuiSelect-select:focus {
+    background-color: #ffffff !important;
+  }
+}
+.checkIO-request-title-row {
+  margin-left: 0px;
+}
+.checkIO-request-title-img {
+  width: 6px;
+  height: 12px;
+  margin-top: 12px;
+}
+.checkIO-request-card-color {
+  background-color: #fafbfc;
+  border-color: #dce0e4;;
+}
+.checkIO-request-title-icon-img-col-table {
+  width: 6px;
+  height: 10px;
+  margin-bottom: 2px;
+}
+.checkIO-request-delete-img {
+  width: 30px;
+  height: 30px;
+}
+.input-checkIO-request .MuiInputBase-input {
+  text-align: left !important;
+}
+.checkIO-request-vertical-line-checkbox-thead {
+  border-left: 3px soli#B1AAF6 !important;
+}
+.checkIO-request-vertical-line {
+  border-left: 3px solid #858BC3;
+  text-align: right;
+}
+.checkIO-request-icon-drop .MuiSelect-icon{
+  color: rgb(25, 27, 151);
+}
+.checkIO-request-icon-drop .MuiSvgIcon-root {
+  font-size: 35px;
+}
+.checkIO-request-vertical-border {
+  border-right: 1px solid #e3e5f1;
+}
+.checkIO-request-allow-label {
+  font-size: 12.5px;
+}
+.checkIO-request-close-modal-button {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  color: white;
+  right: -10px;
+  top: -10px;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: rgb(35, 58, 161) !important;
+  border: none;
+  width: 30px !important;
+  height: 30px i !important;
+}
+.checkIO-request-label-disable {
+  color: #9e9e9e;
+}
+.input-checkIO-request .MuiInput-underline.Mui-disabled:before {
+  // border-bottom-style: double !important;
+  border-color: #9e9e9e9c;
+}
+
+
+@media (min-width: 768px) {
+  .checkIO-request-loading-icon {
+    position: fixed;
+    left: 44%;
+    top: 35%;
+    z-index: 9999;
+    height: 50px;
+    width: 100px;
+    white-space: nowrap;
+  }
+}
+@media (min-width: 992px) {
+  .checkIO-request-loading-icon {
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    z-index: 9999;
+    height: 50px;
+    width: 100px;
+    white-space: nowrap;
+  }
+}
+.checkIO-request-remove-icon-popup {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+}
+.checkIO-request-approver-modal > div > div > div > div {
+  margin-left: unset !important;
+  margin-right: unset !important;
+}
+.checkIO-request-card-border {
+  border-radius: 5px !important;
+}
+.checkIO-request-border-color {
+  border-color: #dce0e4;;
+}
+.checkIO-request-input {
+  .MuiInputBase-root {
+    margin-left: 0px !important;
+  }
+}
+/** End CheckInCheckOutRequest */
+.budget-yaer-income-tax {
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  .lbl-disable {
+    color: #c7c6c6;
+  }
+  .MuiInputBase-input {
+    text-align: left !important;
+  }
+  .budget-year-result-data {
+    .row {
+      margin-bottom: 5px;
+    }
+    border: 1px solid #c8ccd0;
+  }
+  .autocomplete-wrapper {
+    display: grid;
+    position: relative;
+    color: #7a7b7c !important;
+    .dropdown {
+      width: 100%;
+      text-align: left;
+      overflow: auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      position: absolute;
+      z-index: 99;
+      max-height: 100px;
+    }
+    .item {
+      display: block;
+      cursor: pointer;
+      padding-left: 15px;
+
+      .selected-item {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+
+      &:hover {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+    }
+  }
+  @media (max-width: 1094px) {
+    .card-body .row .col-lg-6 .row {
+      .col-lg-6 {
+      width: 50%;
+      }
+      .col-lg-5 {
+        width: 50%;
+      }
+    }
+  }
+}
+/** Start EmployeeInfoDetail */
+.emp-info-detail {
+  .MuiFormControl-root {
+    flex-direction: unset !important;
+  }
+}
+.emp-info-detail-col-title {
+  margin-bottom: 10px;
+}
+.emp-info-detail-vertical-border {
+  border-right: 1px solid #e3e5f1;
+}
+.emp-info-detail-label-require {
+  color: red;
+}
+.input-emp-info-detail{
+  .MuiInputBase-input {
+    text-align: left !important;
+    color: #3c4b64;
+  }
+}
+.input-emp-info-detail-disable {
+  .MuiInputBase-input {
+    text-align: left !important;
+  }
+}
+.emp-info-detail-label-disable {
+  color: #9e9e9e;
+}
+
+.emp-info-detail-img-sub {
+  width: 7px;
+  height: 14px;
+  margin-right: 12px;
+  margin-bottom: 4px;
+}
+.emp-info-detail-card {
+  background-color: #fafbfc;
+  border-color: #d8dbe0;
+  border-radius: 5px !important;
+}
+.emp-info-detail-vertical-line{
+  border-left: 3px solid #858BC3;
+  text-align: right;
+}
+.emp-info-detail-input-file {
+  display: flex;
+}
+.emp-info-detail-allowance-img {
+  width: 40px;
+  height: 40px;
+}
+.emp-info-detail-allowance-label {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.emp-info-detail-text-area {
+  text-indent: 11px;
+  background-attachment: local;
+  background-image:
+    linear-gradient(to right, white 0px, transparent 0px),
+    linear-gradient(to left, white 10px, transparent 10px),
+    repeating-linear-gradient(white, white 31px, #b0b6d8 31px, #b0b6d8 32px, white 31px);
+  line-height: 31px;
+  padding: 8px 10px;
+  resize: none;
+  border: none;
+  padding-left: 0px;
+  padding-top: 0px;
+  color: #9e9e9e;
+  background-position: 0px -2px;
+  width: 101% !important;
+}
+.emp-info-detail-avatar {
+  height: 140px;
+  width: 100px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin: auto;
+  padding-top: 40px
+}
+.emp-info-detail-change-picture{
+  position: relative;
+  bottom: 50px;
+  padding: 0px 5px 5px 5px;
+}
+
+.emp-info-card {
+  margin-top: 0px !important;
+}
+.emp-info-card  {
+  border-top-left-radius: 1rem ;
+  border-top-right-radius: 1rem;
+}
+.emp-info-card-color {
+  background-color: #fafbfc;
+  border-color: #dce0e4;;
+}
+.emp-info-card-border {
+  border-color: #dce0e4;;
+}
+
+/** End EmployeeInfoDetail */
+.approver-list{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+
+  .card {
+    border-radius: 1rem;
+    border-color: #ebedef !important;
+    animation: fadeIn .8s ease-out;
+  }
+
+  .line {
+    margin-left: 49% !important;
+  }
+  .MuiInputBase-input {
+    text-align: left !important;
+  }
+  .style-title-approver-list{
+    margin-bottom: -15px;
+    font-size: 1.3125rem;
+    font-weight: bold;
+    color: #4e57aa;
+  }
+  .style-label-approver-list{
+    padding: 17px 0px 0px 28px;
+    font-size: 16px;
+  }
+}
+
+/*nt_linh: Business Trip Detail*/
+.business-trip-detail{
+    .file{
+       color: #01a3f8;
+       font-size: 16px;
+    }
+    .td-approver{
+       background-color: #f3f3f3;
+    }
+    .td-gray{
+        background-color: rgb(250, 251, 252);
+    }
+    .td-buget{
+        background-color: #ebedef52;
+    }
+    .td-pink{
+        background-color: #f8f4f4;
+    }
+    .th-bottom{
+        border-bottom: 2px solid #E3E5F1;
+    }
+    .td-currencies{
+        background-color:#F6F9F2;
+    }
+    .td-attachement{
+        padding: 3px;
+    }
+    .boderDetail{
+        border-right: 1px solid #E3E5F1;
+    }
+    .img-title{
+        width: 6px;
+        height: 12px;
+
+    }
+    .duedate{
+        padding-top: 6px;
+    }
+    .date-icon{
+        position: absolute;
+        margin: 7px 5px 0px 0px;
+        width: 17px;
+        height: 17px;
+    }
+}
+/** Checkin checkout detail information */
+@media (min-width: 992px) {
+  .mx-lg-4{
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+}
+/** Checkin checkout detail information End */
+
+.bussion .img-timepicker {
+  width: 30px;
+  height: 30px;
+  margin-bottom: auto;
+}
+
+.business-trip-adjustment-request {
+  .gray-background{
+    background-color: #fafbfc !important;
+  }
+  .gray-background:focus{
+    background-color: #fafbfc !important;
+  }
+
+  .line{
+    margin: 0 auto !important;
+  }
+  .table-panel-businesstrip-adjustment{
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #c8ccd0;
+    border-radius: 5px;
+    background-color: rgb(250, 251, 252);
+    input{
+      background-color:rgb(250, 251, 252);
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+  .custom_backgrond{
+    input[type="email"],
+    input[type="text"],
+    input[type="password"],
+  // input[type="date"],
+    input[type=number] {
+      background-color: #fafbfc !important;
+    }
+
+    input[type="email"]:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+  // input[type="date"]:focus,
+    input[type=number]:focus {
+      background-color: #fafbfc !important;
+      box-shadow: none;
+      // border: #D8DBE0 !important;
+    }
+  }
+  #date-picker-dialog{
+    //background-color: #fafbfc !important;
+    border-radius: 5px !important;
+  }
+
+  .backgroundate #date-picker-dialog{
+    background-color: #fff !important;
+    border-radius: 5px !important;
+  }
+
+  .card {
+    border-radius: 1rem;
+    border-color: #ebedef !important;
+    animation: fadeIn .8s ease-out;
+  }
+  .business-trip-adjustment-textarea-input{
+    .MuiInputBase-input {
+     text-align: left !important;
+    }
+   }
+   .business-trip-adjustment-text-area {
+     background-attachment: local;
+     background-image:
+       linear-gradient(to right, rgb(250, 251, 252) 0px, transparent 0px),
+       linear-gradient(to left, rgb(250, 251, 252) 10px, transparent 10px),
+       repeating-linear-gradient(rgb(250, 251, 252), rgb(250, 251, 252) 31px, #b0b6d8  31px, #b0b6d8  32px, rgb(250, 251, 252) 31px);
+     line-height: 31px;
+     padding: 8px 10px;
+     resize: none;
+     border: none;
+     padding-left: 0px;
+     padding-top: 0px;
+     color: #9e9e9e;
+     background-position: 0px -2px;
+   }
+
+  .expense-request-label-disable{
+    color: #c7c6c6;
+  }
+
+  .abf{
+    border-bottom: 1px solid #b0b6d8 !important;
+  }
+
+  .td-while{
+    background-color: #ffffff;
+  }
+
+  .td-gray{
+    background-color: #f1f3f8;
+  }
+
+  .td-actual{
+    background-color: rgb(229, 246, 245);
+  }
+
+  .col-color-blue {
+    background-color: #D5F7DF;
+  }
+
+  .expense-request-attachment-file-label {
+    font-weight: normal !important;
+    position: relative !important;
+    padding-left: 10px;
+    display: unset !important;
+  }
+
+  .expense-request-attachment-file-browser {
+    border-bottom: dotted 1.5px !important;
+    color: blue !important;
+    cursor: pointer !important;
+  }
+
+  textarea {
+    background-color: #fafbfc !important;
+  }
+
+  .custom_backgrond{
+    input[type="email"],
+    input[type="text"],
+    input[type="password"],
+// input[type="date"],
+    input[type=number] {
+      background-color: #fafbfc !important;
+    }
+
+    input[type="email"]:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+  // input[type="date"]:focus,
+    input[type=number]:focus {
+      background-color: #fafbfc !important;
+      box-shadow: none;
+      // border: #D8DBE0 !important;
+    }
+  }
+
+  .fx-rate {
+    padding: 5px 22px;
+    border: 1px solid #c8ccd0;
+    border-radius: 15px;
+    background-color: #F7BF24;
+    text-align: center;
+  }
+
+  .expense-request-checkbox-admin {
+    float: right;
+    display: flex;
+  }
+
+  .expense-request-card-detail {
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #c8ccd0;
+    border-radius: 5px;
+    .row {
+      align-items: center;
+    }
+    .radio-setting {
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #a9a8a8;
+        min-width: 151px;
+      }
+    }
+    .radio-setting-small {
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #a9a8a8;
+        min-width: 96px;
+      }
+    }
+  }
+
+  .autocomplete-wrapper input {
+    padding-left: 0px !important;
+  }
+
+  input[type='file'] {
+    color: transparent;
+  }
+  button:disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+
+  .emp-list-i-move {
+    position: absolute;
+    right: 3rem;
+    margin: 9px 0px 0px 100px;
+    color: #e3e5f1;
+  }
+
+  .fullWidth {
+    width: 100%;
+  }
+  .MuiInputBase-input {
+    text-align: left !important;
+  }
+  .back-grow-adjustment {
+    background:#d8dbe0;
+  }
+  .table thead th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  .text-left{
+    text-align: left !important;
+  }
+  .air-ticket__acceptcurrency--fxrate {
+    text-align: center;
+    background: orange;
+    min-width: 15%;
+    margin-bottom: unset;
+    position: absolute;
+    height: calc(1.5em + 0.75rem + 2px);
+    right: 15px;
+    line-height: calc(1.5em + 0.75rem + 2px);
+    border-radius: 0.25rem;
+  }
+  .air-ticket__acceptcurrency--block {
+    display: flex;
+    width: 100%;
+    position: initial;
+    margin-left: 5px;
+  }
+
+  .textleft {
+    text-align: left;
+  }
+  .textright {
+    text-align: right;
+  }
+  .textcenter {
+    text-align: center;
+  }
+  .td-no {
+    min-width: 50px;
+  }
+  .td-date {
+    min-width: 170px;
+  }
+  .td-title {
+    min-width: 250px;
+  }
+  .td-file {
+    min-width: 250px;
+  }
+  .td-cost {
+    min-width: 110px;
+  }
+  .td-drop {
+    min-width: 110px;
+  }
+  .td-action {
+    min-width: 90px;
+  }
+  th {
+    text-align: left;
+    vertical-align: middle !important;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (max-width: 992px) {
+    .padding-left_unset {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+/** Business Trip List Start*/
+.tableFixHead       { overflow-y: auto; max-height: 400px; }
+.tableFixHead thead { position: sticky; top: 0; z-index: 1; }
+.businessTripList.imgList {
+  width: 5px;
+  height: 12px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+/** Business Trip List End*/
+//expense ajustment detail
+.expense-ajustment-detail{
+  .file{
+    color: #01a3f8;
+    font-size: 16px;
+ }
+  .customer-td-img{
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .table{
+    width: 100%;
+    height: 100%;
+  }
+  .td-img{
+    padding: 15px;
+    align-items: center;
+  }
+  .td-actual{
+    background-color: #e5f6f5;
+  }
+  .td-blue-customer{
+    background-color: #D5F7DF;
+  }
+  .td-gray{
+    background-color: #fafbfc;
+  }
+  .td-pink-blur{
+    background-color: #f7ecf5;
+  }
+  .td-green-blur{
+    background-color: #F6F9F2;
+  }
+  #dropAppliedDate,#dropDueDate{
+    text-align: left !important;
+  }
+  .fa-file-alt{
+    font-size: 20px;
+    color: rgb(1, 163, 248);
+  }
+  .label-disable{
+    color: #c7c6c6;
+  }
+  .footer{
+    td{
+        border: 1px solid;
+        border-color: white;
+    }
+  }
+  .card-form{
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(250, 251, 252);
+    border: 1px solid #c8ccd0;
+    border-radius: 5px;
+  }
+  .card-table{
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #c8ccd0;
+    border-radius: 5px;
+  }
+}
+/** Expense Request Start */
+.expense-request-select{
+  .MuiInputBase-input {
+    text-align: left !important;
+    padding-left: 10px;
+  }
+  .MuiSelect-select:focus {
+    background-color: unset !important;
+  }
+}
+.expense-request-icon-drop .MuiSelect-icon{
+  color: rgb(25, 27, 151);
+}
+.expense-request-icon-drop .MuiSvgIcon-root {
+  font-size: 35px;
+}
+.expense-request-card-detail {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #c8ccd0;
+  border-radius: 5px;
+  .row {
+    align-items: center;
+  }
+  .radio-setting {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #a9a8a8;
+      min-width: 151px;
+    }
+  }
+  .radio-setting-small {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #a9a8a8;
+      min-width: 96px;
+    }
+  }
+}
+.expense-request-label-disable {
+  color: #c7c6c6;
+}
+.expense-request-label {
+  font-weight: normal !important;
+  padding-bottom: 0.5rem !important;
+  padding-top: 0.5rem !important;
+}
+@media (min-width: 1024px) {
+  .expense-request-label {
+    font-weight: normal !important;
+    margin-bottom: 0px !important
+  }
+}
+.expense-request-label-warning {
+  color: red;
+  font-weight: normal !important;
+}
+
+.expense-request-attachment-file-browser {
+  border-bottom: dotted 1.5px !important;
+  color: blue !important;
+  cursor: pointer !important;
+}
+.expense-request-attachment-file-label {
+  font-weight: normal !important;
+  position: relative !important;
+  padding-left: 10px;
+  display: unset !important;
+}
+.expense-request-attachment-file-i {
+  color: #dad2d2;
+  font-size: 20px !important;
+}
+.expense-request-input-card-detail {
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: unset !important;
+  }
+  .MuiFormControl-root{
+    flex-direction:unset !important;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fafbfc inset !important;
+  }
+}
+.expense-request-textarea-input{
+ .MuiInputBase-input {
+  text-align: left !important;
+ }
+}
+.expense-request-text-area {
+  text-indent: 11px;
+  background-attachment: local;
+  background-image:
+    linear-gradient(to right, rgb(250, 251, 252) 0px, transparent 0px),
+    linear-gradient(to left, rgb(250, 251, 252) 10px, transparent 10px),
+    repeating-linear-gradient(rgb(250, 251, 252), rgb(250, 251, 252) 31px, #b0b6d8  31px, #b0b6d8  32px, rgb(250, 251, 252) 31px);
+  line-height: 31px;
+  padding: 8px 10px;
+  resize: none;
+  border: none;
+  padding-left: 0px;
+  padding-top: 0px;
+  color: #9e9e9e;
+  background-position: 0px -2px;
+}
+.expense-request-img-table {
+    width: 6px;
+    height: 10px;
+    margin-bottom: 2px;
+}
+.col-color-blue {
+ background-color: #D5F7DF;
+}
+.col-color-pink {
+  background-color: #f7ecf5;
+}
+.col-color-green {
+  background-color: #F6F9F2;
+}
+.expense-request-checkbox {
+  width: fit-content;
+  font-weight: normal !important;
+  padding-bottom: 0.5rem !important;
+}
+.expense-request-checkbox-admin {
+    float: right;
+    display: flex;
+}
+@media screen and (min-width: 992px) and (max-width: 1068px){
+  .expense-request-checkbox-admin {
+    float: unset;
+    display: flex;
+  }
+}
+.expense-request-close-modal-button {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  color: white;
+  right: -10px;
+  top: -10px;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: rgb(35, 58, 161) !important;
+  border: none;
+  width: 30px !important;
+  height: 30px i !important;
+}
+.expense-request-card-border {
+  border-radius: 5px !important;
+}
+.expense-request-remove-icon-popup {
+  position: absolute;
+  right: 4px;
+  top: 0px;
+}
+.fx-rate {
+  padding: 20px;
+  border: 1px solid #c8ccd0;
+  border-radius: 15px;
+  background-color: #F7BF24;
+  text-align: center;
+}
+@media screen and (max-width: 1200px){
+  .fx-rate {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #c8ccd0;
+    border-radius: 15px;
+    background-color: #F7BF24;
+    text-align: center;
+  }
+}
+.expense-autocomplete {
+  .autocomplete-wrapper {
+    display: grid;
+    position: relative;
+    color: #7a7b7c !important;
+    .dropdown {
+      width: 100%;
+      text-align: left;
+      overflow: auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      position: absolute;
+      z-index: 99;
+      max-height: 100px;
+    }
+    .item {
+      display: block;
+      cursor: pointer;
+      padding-left: 15px;
+
+      .selected-item {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+
+      &:hover {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+    }
+  }
+
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+}
+.expense-request-approver-modal > div > div > div > div {
+  margin-left: unset !important;
+  margin-right: unset !important;
+}
+.expense-request-delete-img {
+  width: 30px;
+  height: 30px;
+}
+.expense-request-text-field{
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #ffff inset !important;
+  }
+  .MuiFormControl-root{
+    flex-direction:unset !important;
+  }
+}
+.expense-request-card {
+  border-color: #9e9e9e9c;
+}
+.expense-request-vertical-line-checkbox-thead {
+  border-left: 3px soli#B1AAF6 !important;
+}
+.expense-request-vertical-line {
+  border-left: 3px solid #858BC3;
+  text-align: right;
+}
+.expense-request-align .MuiInputBase-input {
+  text-align: left !important;
+}
+.expense-request-title-icon-img-col-table {
+  width: 6px;
+  height: 10px;
+  margin-bottom: 2px;
+}
+.PayrollCaculationMethodSetup-background{
+    input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+      background-color: unset !important;
+    }
+    .MuiFormControl-root{
+      flex-direction:unset !important;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active
+    {
+    -webkit-box-shadow: 0 0 0 30px #f5f6f7 inset !important;
+    }
+}
+@media screen and (max-width: 992px){
+  .expense-unit-price {
+    padding-bottom: 25px;
+  }
+}
+.expense-info-des {
+  display: flex;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 730px){
+  .expense-info-des {
+    display: unset;
+  }
+}
+@media screen and (max-width: 350px){
+  .expense-request-approver-search {
+    display: unset !important;
+
+  }
+  .expense-request-approver-search-item {
+    max-width: 100% !important;
+    padding-bottom: 10px;
+  }
+}
+.expense-request-vertical-border {
+  border-right: 1px solid #e3e5f1;
+}
+.expense-label-margin {
+  margin-bottom: 0px !important;
+}
+.input-browser {
+  opacity: 0%;
+  position: absolute;
+  left: 12px;
+  z-index: 999;
+  width: 90% !important;
+}
+@media screen and (min-width: 350px){
+  .input-browser {
+    opacity: 0%;
+    position: absolute;
+    left: 12px;
+    z-index: 999;
+    width: fit-content !important;
+  }
+}
+/** Expense Request End */
+
+/** Expense List Start */
+.reject-history-modal-button {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  color: white;
+  right: -10px;
+  top: -10px;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: rgb(35, 58, 161) !important;
+  border: none;
+}
+.expense-list-card-detail {
+  width: 100%;
+  border: 1px solid #c8ccd0;
+  border-radius: 5px;
+  .row {
+    align-items: center;
+  }
+  .radio-setting {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #a9a8a8;
+      min-width: 151px;
+    }
+  }
+  .radio-setting-small {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #a9a8a8;
+      min-width: 96px;
+    }
+  }
+}
+.expense-list-i-move {
+  position: absolute;
+  right: 5rem;
+  margin: 9px 0px 0px 100px;
+  color: #e3e5f1;
+}
+.expense-list-input {
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: unset !important;
+    text-align: left !important;
+  }
+}
+.expense-list-text-field{
+  .MuiInputBase-root {
+    margin-left: unset !important;
+  }
+}
+/** Expense List End*/
+/** ExpenseAdjustmentRequest*/
+.MuiMenu-paper{
+    max-height: 260px !important;
+}
+.expense-adjustment-request{
+    .card{
+        padding: 20px;
+        width: 100%;
+        border: 1px solid #c8ccd0;
+        border-radius: 5px;
+        background-color: #fafbfc;
+    }
+    .td-gray{
+        background-color: rgb(250, 251, 252);
+    }
+    .td-actual{
+        background-color: rgb(229, 246, 245);
+    }
+   .td-qty{
+      min-width: 100px;
+   }
+   .td-reason{
+    min-width: 200px;
+   }
+   .td-date{
+     min-width: 165px;
+   }
+   .file{
+    color: #01a3f8;
+    font-size: 16px;
+    }
+}
+
+.summarize-total-amount-prepare-list{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  .card {
+    border-radius: 1rem;
+    border-color: #ebedef !important;
+    animation: fadeIn .8s ease-out;
+  }
+}
+
+.card .card-header h5{
+  font-weight: bold !important;
+}
+
+.summarize-total-amount-prepare{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  .card {
+    border-radius: 1rem;
+    border-color: #ebedef !important;
+    animation: fadeIn .8s ease-out;
+  }
+
+  .mr-bottom{
+    margin-bottom: 15px;
+  }
+  .mar-search{
+    margin-left: 10px;
+    margin-right: 10px
+  }
+  .MuiSelect-select:focus {
+    background-color: #ffffff !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .employee-shift-assign-list{
+    .column{
+      width: 100% !important;
+    }
+    .column-right{
+      margin-left: 0px !important;
+    }
+  }
+}
+
+.business-trip-expense-dashboard{
+  .td-actual{
+    background-color: rgb(229, 246, 245);
+  }
+
+  .responsive-tableTh {
+    text-align: center !important;
+    vertical-align: middle !important;
+    white-space: nowrap !important;
+  }
+}
+
+.salary-list {
+  .mr-bottom{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .MuiSelect-select:focus {
+    background-color: #ffffff !important;
+  }
+  // .MuiTextField-root{
+  //   border-bottom: 1px solid #0000006b !important;
+  // }
+  .MuiInput-underline::before{
+    border-bottom: 1px solid #0000006b !important;
+  }
+}
+
+.employyOvertimeRegistion{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  .line {
+    margin-left: 49% !important;
+  }
+
+  .card {
+    border-radius: 1rem;
+    border-color: #ebedef !important;
+    animation: fadeIn .8s ease-out;
+  }
+}
+
+.approver{
+  .autocomplete-wrapper :disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  // .MuiInput-underline::before{
+  //   border-bottom: 1px solid #0000006b !important;
+  // }
+  .line {
+    margin-left: 49% !important;
+  }
+  .autocomplete-wrapper input {
+    padding-left: 0px !important;
+  }
+  .MuiInputBase-root{
+    margin-left: 0px !important;
+  }
+  .MuiSelect-select:focus {
+    background-color: #fafbfc !important;
+  }
+  .avatar-list {
+    width: 5px;
+    height: 12px;
+    margin-bottom: 2px;
+  }
+  .card {
+    border-radius: 1rem;
+    border-color: #cdd1d4ba !important;
+  }
+  .title-lbl {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .select{
+    margin-left: 10px;
+    text-align: left;
+    border-radius: unset;
+    width: 97%;
+    font-size: 15px;
+    border-bottom: 2px solid #d0d0d3;
+    // background-color: #fafbfc;
+    color: #7a7b7c;
+    border-top: initial;
+    border-left: initial;
+    border-right: initial;
+    padding-left: 0px;
+  }
+  .select:before{
+    content: "\25bc";
+    float:right;
+    color:rgb(181, 184, 187);
+    font-size: 10px;
+    margin: 5px 0px 0px 0px;
+  }
+  .select:after{
+    content: "";
+    margin:0 0.5em;
+    display:inline-block;
+    border: 0px solid transparent;
+  }
+  .select:hover:before{
+    color: var(--select-hover)  ;
+  }
+  .panel {
+    background: #fafbfc;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .autocomplete-wrapper {
+    display: grid;
+    position: relative;
+    color: #fafbfc !important;
+    .dropdown {
+      width: 100%;
+      text-align: left;
+      overflow: auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      position: absolute;
+      z-index: 99;
+      max-height: 100px;
+    }
+    .item {
+      display: block;
+      cursor: pointer;
+      padding-left: 15px;
+
+      .selected-item {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+
+      &:hover {
+        background-color: #1e90ff;
+        color: #fafbfc;
+      }
+    }
+  }
+}
+.overtime-rate-setting {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active
+  {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+  }
+  .custom_backgrond{
+    input[type="email"],
+    input[type="text"],
+    input[type="password"],
+  // input[type="date"],
+    input[type=number] {
+      background-color: #fafbfc !important;
+    }
+
+    input[type="email"]:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+  // input[type="date"]:focus,
+    input[type=number]:focus {
+      background-color: #fafbfc !important;
+      box-shadow: none;
+      // border: #D8DBE0 !important;
+    }
+  }
+  .avatar-list {
+    width: 5px;
+    height: 12px;
+    margin-bottom: 2px;
+  }
+  .ARGridContainer {
+    border: 1px solid #d8dbe0;
+    border-radius: 5px;
+    background: #fafbfc;
+    display: grid;
+    padding: 10px 15px;
+    &--180 {
+      grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+      row-gap: 1em;
+      column-gap: 2em;
+    }
+  }
+  .title-lbl {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .title-cal {
+    font-size: 20px;
+    color: #575fae;
+    margin-left: -18px;
+  }
+  .checkbox-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .checkbox-lst {
+    flex-basis: 25%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .radio-lst {
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card-background-color {
+    background-color: #ebedef;
+  }
+  .card-color {
+    color: #ebedef;
+  }
+  .input-lbl {
+    margin-top: 5px;
+  }
+  .btn-active-setting {
+    margin-right: 5px;
+    background: #c3d6e7;
+  }
+  .margin-payment {
+    margin-left: 10px;
+  }
+  .lst-cal-method {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+  }
+  .form-check-label{
+    font-weight: normal;
+    &--180 {
+      grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+      row-gap: 1em;
+      column-gap: 2em;
+    }
+  }
+  .switch-mmk-usd {
+    .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(to right, #003399 0%, #ffffff 100%);
+    }
+    .c-switch-slider {
+      background: linear-gradient(to right, #00cc00 0%, #ffffff 100%);
+      margin-top: 5%;
+    }
+  }
+  .switch-minute-range {
+    .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(to right, #003399 0%, #ffffff 100%);
+    }
+    .c-switch-slider {
+      background: linear-gradient(to right, #7089bb 0%, #ffffff 100%);
+      margin-top: 5%;
+    }
+  }
+  .switch-pay-with-salary {
+    .c-switch-input:checked + .c-switch-slider {
+      background: linear-gradient(to right, #8ae478fa 0%, #e8eee8 100%);
+      padding: auto;
+    }
+    .c-switch-slider {
+      background: linear-gradient(to right, #89df97 0%, #ffffff 100%);
+      margin-top: 5%;
+    }
+  }
+
+    .c-switch-label .c-switch-input:checked ~ .c-switch-slider::after {
+      color: #000000c9;
+      text-transform: capitalize !important;
+      text-align: right;
+      font-size: 130% !important;
+    }
+    .c-switch-label .c-switch-input ~ .c-switch-slider::after {
+      color: #000000c9;
+      text-transform: capitalize !important;
+      text-align: left;
+      font-size: 130% !important;
+    }
+
+
+  .item-select {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    row-gap: 1em;
+    // column-gap: 2em;
+    margin-left: 20px;
+  }
+  .text-field {
+    margin-top: -5px !important;
+    max-width: 100px;
+  }
+  .panel {
+    background: #ebedef;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .rate-table {
+    margin-left: 5%;
+    width: 520px;
+  }
+  .one-hour-float {
+    text-align: right;
+  }
+  .btn-setting {
+    float: right;
+    padding-right: 40px;
+  }
+  .text-basedon {
+    margin-left: 15px;
+    margin-top: -7px;
+    width: auto;
+    height: 10px;
+  }
+  .text-field {
+    background-color: #fafbfc !important;
+    margin-top: -5px !important;
+    max-width: 100px;
+  }
+  .card-header {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .card-background-color {
+    background-color: #fafbfc;
+  }
+  .btn-active-setting {
+    margin-right: 5px;
+    background: #c3d6e7;
+  }
+  .btn {
+    border-radius: 10px !important;
+    margin: 5px;
+  }
+  &-title-icon {
+    vertical-align: middle;
+  }
+  &-label {
+    font-weight: bold;
+    margin-bottom: unset;
+    vertical-align: middle;
+  }
+  &-padding-left {
+    padding-left: 3rem !important;
+  }
+  &-padding-right {
+    padding-right: 3rem !important;
+  }
+  .scrollcard {
+    height: 245px;
+    overflow: scroll;
+  }
+  // .log-his-list-text {
+    .MuiInputBase-input {
+      text-align: left !important;
+    }
+    .MuiSelect-select:focus {
+      background-color: #ffffff !important;
+    }
+  // }
+  .card {
+        border-radius: 1rem;
+        border-color: #cdd1d4ba !important;
+  }
+  .item-select {
+    flex-basis: auto;
+    // max-width: 100%;
+    // padding: 15px;
+    // min-width: 200px;
+  }
+  .mar-search{
+    margin-left: 10px;
+    margin-right: 10px
+  }
+  .panel {
+    padding-left: 1rem;
+    background: #fafbfc;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  table tr .td-no {
+    width: 5%;
+  }
+  .td-emp-id {
+    width: 10%;
+  }
+  .td-emp-name {
+    width: 15%;
+  }
+  .td-date {
+    width: 15%;
+  }
+  .td-action {
+    width: 35%;
+    max-width: 400px;
+  }
+  .td-status {
+    width: 10%;
+  }
+  .td-platform {
+    width: 10%;
+  }
+  th {
+    text-align: left;
+    vertical-align: middle !important;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (min-width: 992px) {
+    .pr-lg-5, .px-lg-5 {
+      padding-right: 5rem !important;
+    }
+    .pl-lg-5, .px-lg-5 {
+      padding-left: 5rem !important;
+    }
+    .mr-lg-5, .mx-lg-5 {
+      margin-right: 5rem !important;
+    }
+    .ml-lg-5, .mx-lg-5 {
+      margin-left: 5rem !important;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .rate-table {
+      margin-left: 5px;
+      width: 240px;
+    }
+    .margin-payment {
+      margin-left: 2px;
+    }
+    .lst-cal-method {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: -45px;
+    }
+    .one-hour-float {
+      text-align: right;
+    }
+    .checkbox-card {
+      margin-left: -5px;
+      margin-right: 10px;
+      margin-top: 20px;
+    }
+    .btn-setting {
+      margin-left: 25px;
+    }
+    .checkbox-lst {
+      max-width: 100%;
+      margin-left: -40px;
+    }
+  }
+}
+.overtime-rate-list {
+  &-title-icon {
+    vertical-align: middle;
+  }
+  &-label {
+    font-weight: bold;
+    margin-bottom: unset;
+    vertical-align: middle;
+  }
+  &-padding-left {
+    padding-left: 3rem !important;
+  }
+  &-padding-right {
+    padding-right: 3rem !important;
+  }
+  .scrollcard {
+    height: 245px;
+    overflow: scroll;
+  }
+  // .log-his-list-text {
+    .MuiInputBase-input {
+      text-align: left !important;
+    }
+    .MuiSelect-select:focus {
+      background-color: #ffffff !important;
+    }
+  // }
+  .card {
+        border-radius: 1rem;
+        border-color: #cdd1d4ba !important;
+  }
+  .item-select {
+    flex-basis: auto;
+    // max-width: 100%;
+    // padding: 15px;
+    // min-width: 200px;
+  }
+  .mar-search{
+    margin-left: 10px;
+    margin-right: 10px
+  }
+  .panel {
+    padding-left: 1rem;
+    background: #fafbfc;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  table tr .td-no {
+    width: 5%;
+  }
+  .td-emp-id {
+    width: 10%;
+  }
+  .td-emp-name {
+    width: 15%;
+  }
+  .td-date {
+    width: 15%;
+  }
+  .td-action {
+    width: 35%;
+    max-width: 400px;
+  }
+  .td-status {
+    width: 10%;
+  }
+  .td-platform {
+    width: 10%;
+  }
+  th {
+    text-align: left;
+    vertical-align: middle !important;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (min-width: 992px) {
+    .pr-lg-5, .px-lg-5 {
+      padding-right: 5rem !important;
+    }
+    .pl-lg-5, .px-lg-5 {
+      padding-left: 5rem !important;
+    }
+    .mr-lg-5, .mx-lg-5 {
+      margin-right: 5rem !important;
+    }
+    .ml-lg-5, .mx-lg-5 {
+      margin-left: 5rem !important;
+    }
+  }
+  .btn-setting {
+    float: right;
+    padding-right: 40px;
+  }
+  .drop-title {
+    width: 25%;
+    min-width: 300px;
+    margin-left: 10px;
+    margin-top: -10px
+  }
+  .mar-top-icon {
+    margin-left: 15px;
+    margin-top: 3px;
+  }
+  // .text-field
+}
+/* Start OvertimeNotification */
+.overtime-notification-setup {
+  .card {
+    border-color: #d8dbe0 !important;
+  }
+  .expense-autocomplete {
+    .autocomplete-wrapper {
+      display: grid;
+      position: relative;
+      color: #7a7b7c !important;
+      .dropdown {
+        width: 100%;
+        text-align: left;
+        overflow: auto;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: absolute;
+        z-index: 99;
+        max-height: 100px;
+      }
+      .item {
+        display: block;
+        cursor: pointer;
+        padding-left: 15px;
+
+        .selected-item {
+          background-color: #1e90ff;
+          color: #fafbfc;
+        }
+
+        &:hover {
+          background-color: #1e90ff;
+          color: #fafbfc;
+        }
+      }
+    }
+    .autocomplete-wrapper input {
+      padding-left: unset !important;
+    }
+    .autocomplete-wrapper :disabled {
+      cursor: not-allowed;
+      background-color: transparent !important;
+    }
+  }
+  .customTimePicker {
+    margin-left: 20px !important;
+    margin-top:-7px
+  }
+  .title-lbl {
+    margin-left: 19px;
+    font-size: 15px;
+  }
+  .title-icon {
+    width:5px;
+    height:12px;
+  }
+  .img-timepicker {
+    width:30px;
+    height:30px;
+    margin-left:40px;
+    margin-top:-5px
+  }
+  .img-timepicker2 {
+    width:30px;
+    height:30px;
+    margin-left: 44px;
+    margin-top:-5px
+  }
+}
+
+/* End OvertimeNotification */
+
+/* Report Salary Pay Start */
+.report-css{
+  input[type="email"], input[type="text"], input[type="password"], input[type=number] {
+    background-color: unset !important;
+}
+}
+ /* payrollRuleCalculationList */
+.payrollRuleCalculationList{
+    .autocomplete-wrapper :disabled {
+        cursor: not-allowed;
+        background-color: transparent !important;
+      }
+}
+
+.no-border-radius {
+  border-radius: 0px !important;
+}
+
+.employee-late-absent-leave-list {
+  .td-actual {
+    background-color: rgb(229, 246, 245);
+  }
+  .table thead th {
+    word-break: initial;
+  }
+  .td-first-col {
+    border-left: 3px solid rgb(133, 139, 195);
+  }
+}
+.border-bottom-left-radius {
+  border-bottom-left-radius: 14px !important;
+  -webkit-border-bottom-left-radius: 14px !important;
+}
+.border-bottom-right-radius {
+  border-bottom-right-radius: 14px !important;
+  -webkit-border-bottom-right-radius: 14px !important;
+}
+

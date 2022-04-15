@@ -1,0 +1,312 @@
+.card {
+    border-radius: 1rem;
+    border: none;
+}
+.card-header:first-child {
+    border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 0 0;
+    border: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+    background-color: #F5F6FA;
+}
+.custom-select {
+    background: #F5F6FA url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(78, 87, 170)'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat right 0.75rem center/8px 10px;
+    background-size: 0.6rem 1.2rem;
+    background-position-y: 0.7rem;
+}
+[type="date"] {
+    background:#fff url(/image/calendar.png)  97% 50% no-repeat ;
+    background-size: 1.3rem auto;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+#emp_register .add-dept-btn {
+    width: auto;
+    margin-left: 4rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+@media (max-width: 320px) {
+    #emp_register .add-dept-btn {
+        margin-left: 1rem;
+    }
+}
+
+#checkbox {
+    color: #4E57AA;
+}
+.btn {
+    color: #333333;
+}
+
+/*-__________ common end _______________*/
+
+/* _______ photo upload preview start ___________ */
+
+.imgPreview {
+  margin: 15px 0px;
+  height: 131px;
+  width: 141px;
+  border-left: 1px solid #C4CCE3;
+  border-right: 1px solid #C4CCE3;
+  border-top: 5px solid #C4CCE3;
+  border-bottom: 5px solid #C4CCE3;
+}
+.imgPreview img {
+    width: 100%;
+    height: 100%;
+}  
+.submitButton {
+  padding: 12px;
+  margin-left: 10px;
+  background: white;
+  border: 4px solid lightgray;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 10pt;
+  cursor: pointer;
+  &:hover {
+    background: #efefef;
+  }
+}
+.custom-file-label {
+    right: 15px;
+    left: 15px;
+    background-color: #F5F6FA;
+}
+html:not([dir="rtl"]) .custom-file-label::after {
+    right: 5px;
+}
+.custom-file-label::after {
+    top: 4px;
+    height: calc(1.5em + 0.3rem);
+    padding: 0.1rem 0.5rem 0.3rem;
+    background-color: #CFD4E2;
+    border-radius: 0.4rem;
+    border: 1px solid #CDCCCC;
+    color: #333333;
+    font-size: 0.78rem;
+}
+
+/*__________________________ photo upload preview end __________________________ */
+
+/*____________________ Selected Department and Position start ____________________*/
+
+.box_style {
+    margin: 1.25rem;
+    border: 1px solid #E8E4E4;
+    background: #FCFCFC;
+}
+
+.box_style .card-body {
+    padding: 1.25rem;
+}
+
+.box_style .card-footer {
+    background: #FCFCFC;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .dept_pos_btn {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+/*________ table start ____________ */
+
+.table {
+    min-width: 933px;
+    margin-bottom: 1rem;
+	word-break: break-all;
+	border-collapse: inherit;
+	border: 1px solid #D4D0D0;
+  	border-spacing: 0px;
+	border-radius: 15px;
+}
+
+.table thead {
+    background-image: linear-gradient(to right, #C4CCE3, #B1AAF6);
+	color: #FFFFFF;
+}
+
+.table thead th {
+    vertical-align: middle;
+	border-top: none;
+	border-bottom: none;
+	text-align: center;
+}
+
+.table thead tr th:first-child {
+	border-top-left-radius: 14px;
+	-moz-border-radius-topleft: 14px;
+	-webkit-border-top-left-radius: 14px;
+}
+
+.table thead tr th:last-child {
+	border-top-right-radius: 14px;
+	-moz-border-radius-topright: 14px;
+	-webkit-border-top-right-radius: 14px;
+}
+
+.table tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 14px;
+	-moz-border-radius-bottomleft: 14px;
+	-webkit-border-bottom-left-radius: 14px;
+}
+
+.table tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 14px;
+	-moz-border-radius-bottomright: 14px;
+	-webkit-border-bottom-right-radius: 14px;
+}
+
+.table tbody tr:nth-of-type(odd) {
+	background-color: #FFFFFF;
+}
+
+.table tbody tr:nth-of-type(even) {
+	background-color: #F1F3F8;
+}
+
+.table tbody tr td {
+	// text-align: center;
+	vertical-align: middle;
+	border-right: 2px solid #FFFFFF;
+	border-top: none;
+	border-bottom: none;
+}
+
+.span-icon {
+	padding-bottom: 2px;
+}
+
+button:focus {
+    box-shadow: none!important;
+}
+    
+.delete-btn {
+    background-color: #F62B14 !important;
+    color: #FFFFFF !important;
+}
+    
+.delete-btn:hover {
+    background-color: #E20500;
+    color: #FFFFFF;
+}
+    
+.delete-btn:focus {
+    background-color: #E20500;
+}
+
+#emp_register .user-list-table td button.btn {
+    background: none;
+}
+
+.table td#delete-btn {
+    // width: 100px;
+    text-align: center;
+}
+
+/*_______________ table end ____________ */
+
+/*_______________ Selected Department and Position end ____________*/
+
+/*______________ Check the Package to be assigned start ___________*/
+
+.box_style .card-body .card-body {
+    padding: 0 !important;
+}
+
+.package-body .form-check-label,
+.package-body .custom-select {
+    margin-bottom: 0.5rem;
+}
+
+.package-body .form-check-label {
+    display: inline;
+}
+
+.package-body label {
+    padding-right: 1rem;
+}
+
+.package-body .custom-select {
+    background-color: #E4E8F3;
+    border: none;
+    margin-left: 1rem;
+    width: 30%;
+    height: 10%;
+}
+
+.package-block {
+    width: 80%;
+}
+
+.package-body .checkbox::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    border-top: 0.6em solid #4E57AA;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0;
+    border-left: 0.4em solid transparent;
+    margin-right: 0.5rem;
+    transform: rotate(30deg);
+    margin-top: 8px;
+}
+
+.module label {
+    width: 60%;
+}
+
+html:not([dir="rtl"]) .package-body .form-check {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+html:not([dir="rtl"]) .package-body .form-check-input {
+    right: 0;
+}
+
+/*______________ Check the Package to be assigned end ___________*/
+
+/*___________________ media screen adjust start ___________________*/
+
+@media(max-width: 575.98px) {
+	.table {
+        min-width: 700px;
+    }
+}
+
+@media(max-width: 767.98px) {    
+    .imgPreview {
+        display: block;
+        position: relative !important;
+        margin-bottom: 0;
+    }
+    html:not([dir="rtl"]) .form-check-input,
+    .manual-entry label {
+        margin-left: 0;
+        padding-left: 1.2rem;
+    }
+    .form-group {
+        margin-bottom: 0.3rem;
+    }
+    .form-control,
+    .custom-select {
+        margin-bottom: 0.3rem;
+    }
+}
+
+/*___________________ media screen adjust end ___________________*/

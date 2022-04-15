@@ -1,0 +1,277 @@
+.demo-app {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.demo-app-calendar {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/*
+ CSS for the main interaction
+*/
+.tab-set > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+.tab-set .tab-panel {
+  display: none;
+}
+.tab-set > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tab-set > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tab-set > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tab-set > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tab-set > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tab-set > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+/* body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+} */
+
+.tab-set > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* .tab-set > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+} */
+
+.tab-set > label:hover,
+.tab-set > input:focus + label {
+  color: #06c;
+}
+
+.tab-set > label:hover::after,
+.tab-set > input:focus + label::after,
+.tab-set > input:checked + label::after {
+  background: #06c;
+}
+
+.tab-set > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+ Demo purposes only
+*/
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+} */
+
+.tab-set {
+  max-width: 65em;
+}
+.fc-h-event{
+  border: 1px solid #F8CDC8 !important;
+  border: 1px solid var(--fc-event-border-color, #F8CDC8) !important;
+  background-color: #F8CDC8 !important;
+  background-color: var(--fc-event-bg-color, #F8CDC8) !important;
+}
+.fc-event-title {
+  color: #000 !important;
+}
+.fc-event-title-container{
+  border-left-style: solid !important;
+  border-left-color: #F6220A !important;
+}
+.fc-day-today{
+  background-color: #E5F6F5 !important;
+}
+.fc-day-today > .fc-daygrid-day-frame> .fc-daygrid-day-top > .fc-daygrid-day-number{
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  color: #fff;
+  border-radius: 50% !important;
+  background: #2399f3 !important;
+  border: 0.5px solid #83b2d6 !important;
+  text-shadow: 1px 1px 2px #000000;
+}
+#calendar .fc-daygrid-event-dot {
+  display: none;
+}
+.fc-header-toolbar{
+  padding: 15px 15px 15px 25px;
+}
+.fc .fc-toolbar.fc-header-toolbar{
+  margin-bottom: 0px !important;
+  background-color: #FAFBFC !important;
+}
+.fc-today-button.fc-button.fc-button-primary:disabled{
+ content: "Today";
+ color: #959595;
+ background-color: white;
+ border-radius: 20px 20px;
+ width: 80px;
+ align-items: center;
+ box-shadow:  5px 5px 5px #cccccc !important;
+ border-color: transparent;
+}
+.fc-today-button.fc-button.fc-button-primary{
+  content: "Today";
+  background-color: white;
+  color: #959595;
+  border-radius: 20px 20px;
+  width: 80px;
+  align-items: center;
+  box-shadow:  5px 5px 5px #cccccc !important;
+  border-color: transparent;
+}
+.fc-today-button.fc-button.fc-button-primary:hover{
+  background-color: #FAFBFC !important;
+  color: #959595 !important;
+  border-color: transparent !important;
+}
+.fc-button-group>.fc-prev-button.fc-button.fc-button-primary{
+  border-radius: 50px 50px 50px 50px !important;
+  background-color: white;
+  color: #959595;
+  border-color: transparent;
+  box-shadow:  5px 5px 5px #cccccc !important;
+  margin-right: 10px;
+}
+.fc-button-group>.fc-prev-button.fc-button.fc-button-primary:hover{
+  transform: translateY(-3px);
+}
+.fc-button-group>.fc-next-button.fc-button.fc-button-primary{
+  border-radius: 50px 50px 50px 50px !important;
+  background-color: white;
+  color: #959595;
+  border-color: transparent;
+  box-shadow:  5px 5px 5px #cccccc !important;
+  margin-left: 10px;
+}
+.fc-button-group>.fc-next-button.fc-button.fc-button-primary:hover{
+  transform: translateY(-3px);
+}
+.fc .fc-button-primary:not(:disabled):active{
+  background-color: #FAFBFC !important;
+  color: #959595 !important;
+  border-color: transparent !important;
+  box-shadow:  5px 5px 5px #cccccc !important;
+}
+
+.fc-col-header{
+  width: 100% !important;
+}
+.fc-daygrid.fc-dayGridMonth-view.fc-view > .fc-scrollgrid.fc-scrollgrid-liquid {
+  border: 0px;
+  border-top: 1px solid #DDDDDD;
+}
+.fc-daygrid-body-unbalanced , .fc-daygrid-body > .fc-scrollgrid-sync-table  {
+  width: 100% !important;
+  height: 100% !important;
+}
+.fc-day-sun{
+  color: red;
+}
+.fc-day-sat{
+  color: red;
+}
+/* .fc-event-title{
+  width: 200px;
+  height: 50px;
+  white-space: initial !important;
+  overflow: auto !important;
+} */
+.fc-media-screen{
+  border: 1px solid #EDEDED;
+}
+.calendar-active {
+  margin-left: 7px;
+  border-radius: 12px 12px 0px 0px;
+  border: 1px solid #EDEDED;
+  border-bottom-style: hidden;
+  background-color: #FAFBFC;
+}
+.calendar-active > label {
+  margin-bottom: 0px;
+}
+.calendar-in-active > label {
+  margin-bottom: 0px;
+  color: #cccccc;
+}
+.calendar-in-active{
+  margin-left: 7px;
+  border-radius: 12px 12px 0px 0px;
+  border: 1px solid #EDEDED;
+  border-bottom-style: hidden;
+}
+.calendar:hover{
+  background-color:  #FAFBFC;
+  color: gray;
+}
+.list-active{
+  border-radius: 12px 12px 0px 0px;
+  border: 1px solid #EDEDED;
+  border-bottom-style: hidden;
+  background-color: #FAFBFC;
+}
+.list-in-active{
+  border-radius: 12px 12px 0px 0px;
+  border: 1px solid #EDEDED;
+  border-bottom-style: hidden;
+}
+.list:hover{
+  background-color:  #FAFBFC;
+  color: gray;
+}
+.list-active > label {
+  margin-bottom: 0px;
+}
+.list-in-active > label {
+  margin-bottom: 0px;
+  color: #cccccc;
+}
+
+element {
+
+}
+.fc-daygrid-block-event .fc-event-time, .fc-daygrid-block-event .fc-event-title {
+
+    padding: 1px;
+
+}
+/* .fc-h-event .fc-event-title {
+background-color: red;
+    display: inline-block;
+    vertical-align: top;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    overflow: hidden;
+
+} */

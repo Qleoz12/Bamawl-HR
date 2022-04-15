@@ -1,0 +1,59 @@
+.card {
+    border-radius: 1rem;
+    border: none;
+}
+
+select {
+    color: #939598 !important;
+}
+
+select option:first-child {
+    opacity: 0.5;
+}
+
+.custom-select {
+    background: #F5F6FA url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(78, 87, 170)'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat right 0.75rem center/8px 10px;
+    background-size: 0.6rem 1.2rem;
+    background-position-y: 0.7rem;
+}
+
+// ______________________ table start ______________________
+
+// .user-list-table tbody tr td:nth-last-child(3) {
+//     border-right: 2px solid #FFFFFF;
+// }
+.user-list-table tbody tr td.pos_rank,
+.user-list-table tbody tr td.pos_name,
+.user-list-table tbody tr td.name {
+    border-right: 2px solid #FFFFFF !important;
+}
+.table td.rank {
+    width: 300px;
+}
+
+// ______________________ table end ______________________
+
+// ______________________ media screen adjust start ______________________
+
+@media(max-width: 575.98px) {    
+    .table {
+        min-width: 700px;
+    }
+    .table td.no {
+        width: 20px;
+    }
+    .table td.name {
+        width: 150px;
+    }
+    .table td.rank {
+        width: 80px;
+    }    
+    .table td.edit {
+        width: 80px;
+    }
+    .table td.delete {
+        width: 80px;
+    }    
+}
+
+// ______________________ media screen adjust end ______________________

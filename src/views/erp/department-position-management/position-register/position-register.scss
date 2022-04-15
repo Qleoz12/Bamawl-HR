@@ -1,0 +1,34 @@
+.card {
+    border-radius: 1rem;
+    border: none;
+}
+
+input[type="text"] {
+    background-color: #F5F6FA;
+}
+
+// ______________________ table start ______________________
+
+.table td.no {
+    width: 70px;
+}
+.table td.name {
+    width: 500px;
+}
+.table td.rank {
+    width: 350px;
+    border-right: 2px solid #FFFFFF !important;
+}
+
+// ______________________ table end ______________________
+
+// ______________________ media screen adjust start ______________________
+
+@media(max-width: 575.98px) {
+    #delete-btn .modal-footer {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+// ______________________ media screen adjust end ______________________

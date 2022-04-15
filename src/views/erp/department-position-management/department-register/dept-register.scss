@@ -1,0 +1,52 @@
+.card {
+    border-radius: 1rem;
+    border: none;
+}
+
+input[type="text"],
+select {
+    background-color: #F5F6FA;
+}
+
+.custom-select {
+    background: #F5F6FA url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(78, 87, 170)'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat right 0.75rem center/8px 10px;
+    background-size: 0.6rem 1.2rem;
+    background-position-y: 0.7rem;
+}
+
+// ______________________ table start ______________________
+
+.table td.code {
+    width: 300px;
+}
+.table #delete-btn {
+    padding-left: 0;
+    border: none !important;
+}
+.user-list-table tbody tr td.code {
+    border-right: 2px solid #FFFFFF !important;
+}
+
+// ______________________ table end ______________________
+
+// ______________________ media screen adjust start ______________________
+
+@media(max-width: 575.98px) {
+    .table {
+        min-width: 600px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .search-btn {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 0.3rem;
+    }
+    .form-control {
+        margin-bottom: 0.3rem;
+    }
+}
+
+// ______________________ media screen adjust end ______________________

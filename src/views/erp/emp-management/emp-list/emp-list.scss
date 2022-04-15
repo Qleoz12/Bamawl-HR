@@ -1,0 +1,161 @@
+.card {
+    border-radius: 1rem;
+    border: none;
+}
+
+input[type="text"],
+select {
+    background-color: #F5F6FA;
+}
+
+.custom-select {
+    background: #F5F6FA url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(78, 87, 170)'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat right 0.75rem center/8px 10px;
+    background-size: 0.6rem 1.2rem;
+    background-position-y: 0.7rem;
+}
+
+// ______________________ table start _____________________
+
+
+
+.user-list-table tbody tr td:nth-last-child(1) {
+    border-style: none;
+    text-align: left;
+}
+    
+.user-list-table tbody tr td:nth-last-child(2) {
+    border-style: none;
+}
+.user-list-table tbody tr td:nth-last-child(3) {
+    border-style: none;
+}
+.user-list-table tbody tr td:nth-last-child(4) {
+    border-style: none;
+}
+
+.detail-btn {
+    background-color: #FFD255;
+    color: #FFFFFF;
+    height: 29px;
+}
+.detail-btn:hover {
+    background-color: #EEB006;
+    color: #FFFFFF;
+}
+.detail-btn:focus {
+    background-color: #EEB006;
+}
+
+.resign-btn {
+    background-color: #2A3DE8;
+    color: #FFFFFF;
+    height: 29px;
+}
+.resign-btn:hover {
+    background-color: #0714BA;
+    color: #FFFFFF;
+}
+.resign-btn:focus {
+    background-color: #0714BA;
+}
+
+.rehire-btn {
+    background-color: #0B1467;
+    color: #FFFFFF;
+    height: 29px;
+}
+.rehire-btn:hover {
+    background-color: #1425B4;
+    color: #FFFFFF;
+}
+.rehire-btn:focus {
+    background-color: #1425B4;
+}
+
+.permission .btn-permission {
+    padding: 0.25rem 0.75rem;;
+}
+
+.modal-permission .modal-dialog {
+    margin: 3rem auto;
+    word-break: break-word;
+    text-align: left;
+    max-width: 460px;
+}
+
+.modal-permission .modal-content {
+    overflow: auto;
+    margin: 0;
+}
+
+.modal-permission .modal-footer {
+    border-top: none;
+}
+
+.modal-permission .modal-footer button {
+    text-align: center;
+    height: 2rem;
+    background: linear-gradient(180deg ,#c7cbf7 ,#fff);
+    border: 1px solid #e7e5e5;
+    padding: .2rem 1.3rem 1.6rem;
+    margin: 0 1rem;
+}
+
+.span-icon {
+    padding-bottom: 2px;
+}
+
+.table td.permission {
+    text-align: center;
+    width: 170px;
+}
+.table td .btn-permission {
+    border: 1px solid #01A3F8;
+    background: #E9F3F8;
+    border-radius: 1rem;
+}
+.table td.b-action {
+    width: 3rem;
+    padding: 0;
+}
+
+.notShow {
+    display: table-column;
+}
+
+.per-col label {
+    width: 7rem;
+    background-color: #cffaa1;
+    border: 1px solid #7bbe35;
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+// ______________________table end _________________
+
+/*_________________ media screen adjust start _____________________ */
+
+@media(max-width: 575.98px) {
+    .modal-permission .modal-content {
+        width: 70%;
+        margin: 0px auto;
+    }
+	.table {
+        min-width: 700px;
+    }
+    .table td.permission {
+        width: 350px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .form-group {
+        margin-bottom: 0.3rem;
+    }
+    .form-control {
+        margin-bottom: 0.3rem;
+    }
+}
+
+/*_________________ media screen adjust end _____________________ */
